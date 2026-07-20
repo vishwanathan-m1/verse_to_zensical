@@ -1,0 +1,305 @@
+#Project Information
+site_name: HCL Verse Help Center
+site_url: https://help.hcl-software.com/verse_onprem/3.2/index.html
+site_description: >
+  HCL Verse documentation for users and admins.
+use_directory_urls: false
+docs_dir: source
+# site_dir: docs
+
+# Theme Configuration
+theme:
+  name: material
+  logo: assets/images/logo.svg 
+  favicon: assets/images/favicon.png
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - navigation.instant
+#    - navigation.prune
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.select
+    - content.code.copy
+    - content.action.edit
+  custom_dir: theme_overrides
+  icon:
+    repo: fontawesome/brands/github
+    logo: fontawesome/regular/home
+#    edit: fontawesome/regular/pen-to-square
+  font:
+    text: Roboto
+    code: Roboto Mono
+  
+  # Static files
+# static_templates:
+#   - 404.html
+#    - partials/footer.html
+
+# Markdown Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      title: On this page
+#  - pymdownx.highlight:
+#      use_pygments: true
+#      pygments_lang_class: true
+#      auto_title: false
+#      linenums: false
+#  - pymdownx.superfences:
+#      custom_fences:
+#        - name: mermaid
+#         class: mermaid
+#         format: !!python/name:pymdownx.superfences.fence_code_format
+# - pymdownx.tabbed:
+#     alternate_style: true 
+
+# Copyright
+copyright: >-
+  Copyright &copy; 2019-2026, HCL Technologies Limited - 
+#  <a href="#__consent">Change cookie settings</a>
+
+extra:
+  homepage: https://help.hcl-software.com/verse_onprem/
+  social:
+    - icon: fontawesome/brands/github
+      link: https://git.cwp.pnp-hcl.com/CWPdoc
+  version:
+    provider: mike
+    # alias: true
+#  analytics: 
+#    provider: custom
+#    property: G-7LF0XY95M1
+# Product name variables and values
+  fullVerseProductName: HCL Verse
+  shortVerseProductName: Verse
+  currentVersion: 3.2.7
+  oldDocsVersionStr: 3.1
+  oldDocsUrl: https://help.hcl-software.com/verse_onprem/welcome/index.html
+# Longer product-specific text
+  isDominoWorkspace: false
+  isVerse: true
+
+#  isVerse: true
+# isDWVerse: true
+#  consent:
+#    title: Cookie consent
+#    description: >- 
+#      We use cookiess to recognize your repeated visits and preferences, as well
+#      as to measure the effectiveness of our documentation and whether users
+#      find what they're searching for. With your consent, you're helping us to
+#      make our documentation better.
+#    actions:
+#      - accept
+#      - manage
+  
+
+# Repository
+# repo_url: https://git.cwp.pnp-hcl.com/CWPdoc/verse-mkdocs
+# repo_name: CWPdoc/verse-mkdocs
+#edit_uri: edit/main/docs
+
+# Customization
+extra_css:
+  - assets/stylesheets/style.css
+  - assets/stylesheets/minichat.css
+
+extra_javascript:
+  - assets/javascripts/current.js
+  - assets/javascripts/MiniChatJavaScript.js
+  - javascripts/extra.js
+  - javascripts/smartcat-search.js
+
+plugins:
+  - search:
+      lang: 
+        - en
+        - de
+  - tags
+  - section-index
+  - macros
+  - include-markdown
+  - mike:
+      canonical_version: latest
+      alias_type: redirect
+  - git-revision-date-localized:
+      type: date
+#  - meta:
+#      meta_file: .meta.ymls
+
+nav:
+# HCL Verse 3.2.0 Documentation
+- Welcome to HCL Verse: index.md
+- What&apos;s New?:
+  - whats_new/whatsnew.md
+  - What&apos;s new in Verse 3.2.7?:
+      - whats_new/whats_new_3.2.7.md
+      - General enhancement: whats_new/gen_enhancement327.md
+      - Mail enhancements: whats_new/mail_enhancements3.2.7.md
+  - What&apos;s new in Verse 3.2.6 IF1?:
+      - whats_new/whatsnew_3.2.6_IF1.md
+      - Offline password update prompt: whats_new/new_offline_password_prompt.md
+  - What&apos;s new in Verse 3.2.6?:
+      - whats_new/wn_verse326.md
+      - General enhancement: whats_new/general_enhancement326.md
+      - Mail enhancements: whats_new/wn_mail_enhancements326.md
+      - Contacts enhancement: whats_new/contact_enhancements326.md
+      - Delegation enhancement: whats_new/delegation_enhancement.md
+  - What&apos;s new in Verse 3.2.5?:
+      - whats_new/wn_verse325.md
+      - Meeting enhancement: whats_new/meeting_enhancement325.md
+      - Mail enhancement: whats_new/mail_enchancement.md
+  - What&apos;s new in Verse 3.2.4?:
+      - whats_new/whats_new_3.2.4.md
+      - Meeting enhancements: whats_new/wn_meetingenhancements324.md
+      - General enhancements: whats_new/general_enhancements324.md
+  - What&apos;s new in Verse 3.2.3?:
+      - whats_new/whats_new_3.2.3.md
+      - General enhancements: whats_new/general_enhancements3.2.3.md
+      - Mail enhancements: whats_new/mail_enhancements3.2.3.md
+      - Calendar enhancements: whats_new/calendar_enhancement3.2.3.md
+  - What&apos;s new in Verse 3.2.2?:
+      - whats_new/whatsnew_3.2.2.md
+      - General enhancements: whats_new/wn_generalenhancements322.md
+      - Contacts enhancements: whats_new/wn_contactsenhancements322.md
+      - Mail enhancements: whats_new/wn_mailenhancements322.md
+      - Meeting enhancements: whats_new/wn_meetingenhancements322.md
+  - What&apos;s new in Verse 3.2.1?:
+      - whats_new/whatsnew_3.2.1.md
+      - Meeting enhancements: whats_new/wn_meetingenhancements.md
+      - Contacts enhancements: whats_new/wn_contactsenhancements.md
+      - General enhancements: whats_new/wn_generalenhancements321.md
+  - What&apos;s new in Verse 3.2?:
+      - whats_new/whatsnew_3.2.0.md
+      - General Updates: whats_new/wn_generalupdates.md
+      - Mail enhancements: whats_new/wn_mailenhancements.md
+      - New Preferences: whats_new/wn_newpreferences.md
+- User Documentation:
+  - user/welcometoibmverse.md
+  - HCL Doc IQ chatbot: user/faq_dociqchat.md
+  - How do I run Verse as a standalone app?: user/faq_run_standalone.md
+  - Why do I see people in the top bar?: user/faq_people.md
+  - How do I use business cards to see my colleagues&apos; information?: user/faq_biz_cards.md
+  - How do I manage my personal contacts?: user/faq_contacts.md
+  - How to view the certificate status of a personal contact?: user/certificate_section_to_personal_contacts.md
+  - How do I show my picture?: user/FAQ_ProfilePicture.md
+  - How do I chat with my contacts?: user/faq_chat.md
+  - How do I find what I&apos;m looking for?: user/faq_search.md
+  - How can I see my mail storage quota?: user/how_can_i_see_my_mail_quota.md
+  - How do I master mail?:
+      - user/Verse_mail.md
+      - How do I mark mail that I need to follow up on?: user/faq_mark_needs_action.md
+      - How do I track when someone owes me a response?: user/faq_waiting_for.md
+      - How can mail rules help me organize my incoming mail?: user/faq_mail_rules_0.md
+      - How do I organize all those mail threads?: user/faq_threads.md
+      - How do I digitally sign and encrypt my messages?: user/Verse_encryptedmail.md
+      - How do I add a signature to my mail messages?: user/faq_signature.md
+      - How do I create and use Templates?: user/faq_templates.md
+      - Where are my drafts and sent mail?: user/faq_drafts_sent.md
+      - How to view MIME headers and MIME full content?: user/mime_headers.md
+      - Summarizing Emails with Domino IQ?: user/dominoiq_summarize.md
+      - Have Domino IQ suggest a reply email: user/dominoiq_reply.md
+      - How can I view file attachments before I download them?: user/preview_attachments.md
+      - How can I manage my archived mail?: user/faq_archived_mail_.md
+      - How can I recall a sent message?: user/faq_recallmail.md
+      - How can I keep my mails private?: user/faq_keepprivate.md
+#      - How do I send file links and save mail attachments to Domino files?: user/how_do_i_send_file_links.md
+      - How do I manage the address I send emails from?:
+          - user/how_do_i_manage_sent_from_mails.md
+          - How do I use an alternate address when sending mail from my mail file?: user/how_can_i_sent_mail_from_alias_addresses.md
+          - How do I use an alternate address when sending mail from a shared mail file?: user/how_can_i_sent_mail_from_a_shared_mail_file.md
+          - How do I use an alternate address when sending mail from a delegated mail file?: user/how_can_i_sent_mail_from_a_delegated_mail_address.md
+          - How to search for emails from a user sent by a delegatee?: user/how_to_search_emails_sent_in_deligation_mode.md
+  - How do I manage my calendar?:
+      - user/faq_calendar.md
+      - How do I use the Calendar Inbox?: user/faq_calendar_inbox.md
+      - How do I use the Calendar Bar?: user/faq_calendar_bar.md
+      - How do I schedule a meeting?: user/faq_calendar_bar_create.md
+      - How do I integrate an online meeting?: user/faq_online_meeting_integration.md
+      - How do I use a QR code to join a meeting?: user/faq_qr_code.md
+      - How do I show an additional time zone?: user/faq_additional_time_zone.md
+      - How do I leave a placeholder when proposing a new time for a meeting?: user/how_do_i_set_the_meeting_placeholder.md
+      - How do I use calendar alarms?: user/alarms.md
+      - How do I import events from an internet calendar?: user/faq_import_calendar_events.md
+      - How do I set my availability preferences?: user/how_do_i_set_my_availability_preferences_for_others.md
+  - How do I share and link to my files?: user/faq_files.md
+  - How do I personalize Verse?:
+      - user/faq_settings.md
+      - What settings are available?: user/faq_settings_available.md
+      - How do I remove unused addresses from my type-ahead list?: user/faq_removefromtypeahead.md
+      - How do I see names in their native languages?: user/faq_names_in_my_native_language.md
+      - How do I let people know when I will be out of the office?: user/faq_OOO.md
+      - How do I use mail and calendar delegation?:
+          - user/faq_how_use_mail_delegation.md
+          - How do I delegate access to my mail, calendar, and contacts?: user/faq_mail_delegation_access_on_prem.md
+          - How do I access mail and calendars delegated to me?: user/faq_delegated_access_to_me_on_prem.md
+          - What delegation access levels are available?: user/faq_delegation_access_levels_on_prem.md
+      - How can I set my default meetings?: user/faq_defaultmeeting.md
+      - How do I open a mail-in database?: user/faq_mailindatabase.md
+      - How can I choose to save sent mail?: user/faq_optiontosavemail.md
+      - How do I use Verse without an Internet connection?: user/faq_offline.md
+      - How can folders keep me organized?: user/faq_folders_org.md
+      - How can I avoid and deal with spam mail?: user/report_spam.md
+      - How can I use HCL Verse on my mobile device?: user/verse_mobile.md
+  - How do I manage passwords and my Notes ID?: user/faq_manage_ids_t.md
+  - How can I use keyboard shortcuts?: user/faq_keyboard.md
+  - Using DJX name picker: user/using_djx_name_picker.md
+- Administrator Documentation:
+  - admin/vop_admin_welcome.md
+  - Overview: admin/vop_overview.md
+  - Accessibility features: admin/vop_accessibility.md
+  - System requirements: admin/vop_system_requirements.md
+  - Installing and configuring: admin/vop_configuring_server.md
+  - Configuring a proxy to provide high-availablity: admin/configuring_proxy.md
+  - Completing optional post-installation steps:
+      - admin/completing_optional_post_installation_steps.md
+      - Setting up mail-in databases: admin/setting_up_mailin_databases.md
+      - Enabling password and Notes ID options: admin/enabling_password_and_notes_id_options.md
+      - Enabling replying to and forwarding messages from archived mail: admin/enabling_mail_and_calendar_actions_for_archived_mail.md
+      - Enabling relative paths for archived and delegated mail: admin/enabling_relative_paths_for_archived_mail.md
+      - Applying the Verse search view changes to existing mail files: admin/applying_the_verse_search_view.md
+      - Enabling the three-click requirement for attachments and links: admin/enabling_three_click_requirement.md
+      - Enabling Domino Japanese eXtension name picker: admin/enabling_djx_picker.md
+      - Enabling a redirect to delegated Calendar when user does not have access to delegated Mail: admin/enabling_delegated_calendar.md
+      - Preventing users from downloading attachments: admin/prevent_attachment_downloads.md
+  - Integrating with other products:
+      - admin/integrating_with_other_products.md
+      - Configuring integration with HCL Sametime: admin/configuring_integration_with_ibm_sametime.md
+      - Integrating with Connections:
+          - admin/vop_integrating_with_connections.md
+          - Integrating with Docs: admin/vop_integrating_docs.md
+          - Upgrading older profiles:
+              - admin/vop_upgrading_older_profiles.md
+              - Upgrading older profiles on Linux: admin/vop_upgrading_older_profiles_linux.md
+              - Upgrading older profiles on Windows: admin/vop_upgrading_older_profiles_windows.md
+      - Integrating with Box: admin/vop_integrating_box.md
+  - Customizing the user experience:
+      - admin/customizing_the_user_experience.md
+      - Enabling users to add photos of themselves: admin/enabling_users_to_add_pictures_of_themselves.md
+      - Enabling user names to display in Notes format: admin/enabling_canonical_names.md
+      - Enabling QR codes for joining online meetings: admin/enabling_qr_codes_for_meetings.md
+      - Enabling dynamic online meeting services: admin/enabling_domi_online_meetings.md
+      - Enabling integration of forwarding addresses: admin/enabling_improved_integration_of_forwarding_addresses.md
+      - Enabling Domino IQ in Domino platform: admin/enabling_dominoiqreply_summarize.md 
+      - Controlling the concurrent iCalendar imports allowed: admin/controlling_the_concurrent_icalendar_imports_allowed.md
+      - Enabling file preview using Domino File Viewer: admin/enabling_file_preview_using_domino1202.md
+      - Enabling advanced Modify on Send extension: admin/enabling_advanced_modify_on_send_extension.md
+      - Enabling Domino Workspace files service: admin/enabling_dw_files_service.md
+      - Controlling if the default online meeting is used automatically: admin/options_online_meeting.md
+      - Access email messages through direct URLs: admin/email_directURLs.md
+      - Configuring XHR timeouts: admin/EnhanccetimeoutXHR.md
+      - Setting up archive policies: admin/setting_archiving_policy.md
+  - notes.ini settings: admin/notes.ini.md
+  - Uninstalling: admin/uninstalling.md
+- Developer Documentation: admin/verse_extensions.md
+
