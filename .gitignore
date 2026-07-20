@@ -1,0 +1,4 @@
+site/*
+theme_overrides/*
+docs/*
+.DS_Store
