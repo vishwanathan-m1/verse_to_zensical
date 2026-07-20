@@ -1,0 +1,93 @@
+<header>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar {
+      overflow: hidden;
+      background-color: rgb(29, 28, 28);
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: #4b3e3e;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
+<!-- Tab Dropdown Navigation -->
+<section style="position: fixed">
+    
+    <div class="navbar">
+      <a href="./../dw-docs/index.html">VERSEMAINHCL Domino Workspace</a>
+      <a href="./../verse-docs/index.html">Mail, Calendar and Contacts</a>      
+      <a href="./../sametime-docs/index.html">Chat and Meetings</a>      
+      <a href="./../collabora-docs/index.html">Document Editor</a>      
+      <a href="./../leap-docs/index.html">Forms</a>
+      <a href="./../ontime-docs/index.html">Group Calendar</a>
+      <a href="./../huddo-boards-docs/index.html">Boards</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Administration 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="./../domino-admin-docs/index.html">HCL Domino</a>
+            <a href="./../drapi-docs/index.html">Domino Rest API</a>
+            <a href="./../traveler-docs/index.html">Traveler</a>
+        </div>
+      </div> 
+    </div>
+  </section>
+</header>

@@ -1,0 +1,14 @@
+*.DS_Store
+.DS_Store
+_site/
+site/*
+.jekyll-metadata
+*-cache/
+/.vscode/settings.json
+*/sitemap.xml
+*/sitemap.xml.gz
+*/sitemap.xml
+*/sitemap.xml.gz
+*/sitemap.xml
+*/sitemap.xml.gz
+**/.DS_Store
