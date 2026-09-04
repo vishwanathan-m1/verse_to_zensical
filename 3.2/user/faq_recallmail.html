@@ -1,6 +1,4 @@
 <!-- Elements added to main will be displayed on all pages -->
-<!--March2023-->
-
 
 <!doctype html>
 <html lang="en" class="no-js">
@@ -27,7 +25,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="zensical-0.0.46">
+      <meta name="generator" content="zensical-0.0.59">
     
     
       
@@ -38,7 +36,7 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.19d3147f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.5da3a30f.min.css">
       
       
 
@@ -105,10 +103,8 @@
 <!--  Global site tag (gtag.js) - Google Analytics end -->
     
     
-  
-    <meta name="robots" content="index, follow" />
-  
   <meta property="og:image" content="https://opensource.hcltechsw.com/digital-experience/site-thumbnail.png" />
+  
 
   </head>
   
@@ -143,16 +139,12 @@
   <button class="dropbtn">Resources <i class="fa fa-caret-down"></i></button> 
   <div class="dropdown-content">
   <a href="https://support.hcltechsw.com" target="_blank">Customer Support</a>
-  <a href="https://hclsoftwareu.hcltechsw.com/hcl-dx" target="_blank">HCLSoftware U</a>
+  <a href="https://academy.hcltechsw.com" target="_blank">Software Academy</a>
   <a href="https://support.hcltechsw.com/community" target="_blank">Community Forums</a>
 
 </div>
 </div>
   
-<div style='float: right;display: inline-block;width: 140px;margin-top: -7px;'>
-<span id='scLangSelectorContainer' style='z-index: 1000; position: absolute; right:200.95px;'/>
-</div>
-
   <!-- Uncomment the following announcement if you need it -->
   <!--
  <div class="md-banner--feedback" style="display:inline">
@@ -178,7 +170,9 @@
             <div class="md-banner__inner md-grid md-typeset">
               
   You're not viewing the latest version.
-  <a href="../../latest/user/faq_recallmail.html">
+  
+    <a href="../../latest/user/faq_recallmail.html">
+  
     <strong>Click here to go to latest.</strong>
   </a> 
 
@@ -5992,6 +5986,9 @@
               
               <article class="md-content__inner md-typeset">
                 
+  
+  <div id="mkdocs-page-path-tracker" data-path="user/faq_recallmail.html" style="display:none;"></div>
+  
                   
 
 <h1 id="how-can-i-recall-a-sent-message">How can I recall a sent message?</h1>
@@ -6018,6 +6015,7 @@
 
 
                 
+
               </article>
             </div>
           
@@ -6054,10 +6052,11 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.tabs","navigation.indexes","navigation.top","navigation.instant","search.highlight","search.share","search.suggest","content.code.select","content.code.copy","content.action.edit"],"search":"../assets/javascripts/workers/search.b6b7e04f.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.tabs","navigation.indexes","navigation.top","navigation.instant","search.highlight","search.share","search.suggest","content.code.select","content.code.copy","content.action.edit"],"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":{"provider":"mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.ee611ef6.min.js"></script>
+  
+      <script src="../assets/javascripts/bundle.6970bfe9.min.js"></script>
       
         <script src="../assets/javascripts/current.js"></script>
       
@@ -6068,5 +6067,53 @@
         <script src="../javascripts/smartcat-search.js"></script>
       
     
+  <script>
+    (function() {
+      // Prevents binding multiple duplicated listeners if the script block re-executes
+      if (window.mkdocsVersionInterceptorAttached) return;
+      window.mkdocsVersionInterceptorAttached = true;
+
+      // Intercept version dropdown clicks at the capture phase (true) to override theme defaults
+      document.addEventListener("click", function(event) {
+        var link = event.target.closest(".md-version__link");
+        if (!link) return;
+
+        // Immediately halt the theme's built-in redirect logic
+        event.preventDefault();
+        event.stopPropagation();
+
+        // Safely fetch the topic path from the active DOM tracker
+        var tracker = document.getElementById("mkdocs-page-path-tracker");
+        var pagePath = tracker ? tracker.getAttribute("data-path") : "";
+        
+        var baseHref = link.getAttribute("href");
+        if (!baseHref) return;
+        
+        if (!baseHref.endsWith("/")) {
+          baseHref += "/";
+        }
+
+        // Construct the full path to the topic inside the chosen version
+        var targetUrl = baseHref + pagePath;
+
+        // Perform a quick asynchronous background validation check
+        fetch(targetUrl, { method: 'GET' })
+          .then(function(response) {
+            // If the server confirms the topic exists (Status 200), route directly to it
+            if (response.ok) {
+              window.location.href = targetUrl;
+            } else {
+              // If it returns a 404 or any error code, fall back to that version's home page
+              window.location.href = baseHref;
+            }
+          })
+          .catch(function() {
+            // Safety fallback to the version home page if network drops or CORS blocks testing
+            window.location.href = baseHref;
+          });
+      }, true); // The 'true' flag activates the capture phase to bypass theme scripts safely
+    })();
+  </script>
+
   </body>
 </html>
