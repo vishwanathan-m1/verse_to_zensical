@@ -1,6 +1,10 @@
 # How to view the certificate status of a personal contact?
 
-In HCL Verse 3.2.6, there is now a dedicated section in Contact forms for viewing the status of the contact's Notes certified public key or Internet certificate.
+{% if isDominoWorkspace %}
+There is a dedicated section in Contact forms for viewing the status of the contact's Notes certified public key or Internet certificate.
+{% else %}
+In {{ fullVerseProductName }} 3.2.6, there is now a dedicated section in Contact forms for viewing the status of the contact's Notes certified public key or Internet certificate.
+{% endif %}  
 
 These certificates can be viewed in the dedicated Certificate section of the contact details.
 

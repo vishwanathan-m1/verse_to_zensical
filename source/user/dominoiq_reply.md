@@ -1,8 +1,9 @@
 # Have Domino IQ suggest a reply email 
-{% if isDominoWorkspace %}
-Starting in {{ fullVerseProductName }}, users will have a Domino IQ Reply and Domino IQ Reply to All action available in the action bar of a Mail message. This action generates an automatic reply to the selected mail which may highlight key action items and dates to help the user quickly reply to the email thread. See the admin documents for [Enabling Domino in Domino platform](../admin/enabling_dominoiqreply_summarize.md).
+
+{% if isVerse %}
+Starting in {{ fullVerseProductName }} 3.2.7, users will have a Domino IQ Reply and Domino IQ Reply to All action available in the action bar of a Mail message. This action generates an automatic reply to the selected mail which may highlight key action items and dates to help the user quickly reply to the email thread.{% if isVerse %} See admin documents for [Enabling Domino IQ in Domino platform](../admin/enabling_dominoiqreply_summarize.md).{% endif %} 
 {% else %}
-Starting in HCL Verse 3.2.7, users will have a Domino IQ Reply and Domino IQ Reply to All action available in the action bar of a Mail message. This action generates an automatic reply to the selected mail which may highlight key action items and dates to help the user quickly reply to the email thread. See the admin documents for [Enabling Domino in Domino platform](../admin/enabling_dominoiqreply_summarize.md).  
+In {{ fullVerseProductName }}, users have a Domino IQ Reply and Domino IQ Reply to All action available in the action bar of a Mail message. This action generates an automatic reply to the selected mail which may highlight key action items and dates to help the user quickly reply to the email thread. 
 {% endif %}
 
 1. Click email.

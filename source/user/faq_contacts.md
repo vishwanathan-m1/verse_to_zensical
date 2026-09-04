@@ -1,13 +1,15 @@
 # How do I manage my personal contacts?
 
-Add contacts to save information about the people you communicate with in HCL Verse.
+Add contacts to save information about the people you communicate with in {{ fullVerseProductName }}.
 
 ## Adding New Contact
 
 To add a contact, click **Contacts** &gt; **New Contact**:
-
+{% if isDominoWorkspace %}
+![New Contact and New Group button from Contacts](images/DW_newcontact1.png)
+{% else %}
 ![New Contact and New Group button from Contacts](images/newcontact1.png)
-
+{% endif %} 
 Add a name and any other information that you want and then save the contact. You can add photo, phone numbers, email addresses, web site addresses, work information, birthday and anniversary dates, and postal addresses.
 
 ![New contact form](images/newcontactform.jpg)
@@ -27,16 +29,22 @@ To send an email or meeting invitation to your contacts, type the contact name o
 ## Adding New Group
 
 To add a group, click **Contacts** &gt; **New Group** from the split button:
-
+{% if isDominoWorkspace %}
+![New Contact and New Group button from Contacts](images/DW_newcontact1.png)
+{% else %}
 ![New Contact and New Group button from Contacts](images/newcontact1.png)
-
+{% endif %} 
 The group name and at least one group member is required. After adding members to the group, click **Save**.
 
 ![new group form](images/newgroup_contacts.png)
-
+ 
 You can send an email to the group.
-
+{% if isDominoWorkspace %}
+![send email to the group at once](images/DW_newgroup_contacts_1.png)
+{% else %}
 ![send email to the group at once](images/newgroup_contacts_1.png)
+{% endif %} 
+
 
 **Parent topic:** [User Documentation](../user/welcometoibmverse.md)
 

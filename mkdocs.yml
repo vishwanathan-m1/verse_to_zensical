@@ -20,7 +20,6 @@ theme:
     - navigation.instant
 #    - navigation.prune
     - search.highlight
-    - search.share
     - search.suggest
     - content.code.select
     - content.code.copy
@@ -119,6 +118,7 @@ extra_javascript:
   - assets/javascripts/MiniChatJavaScript.js
   - javascripts/extra.js
   - javascripts/smartcat-search.js
+  - javascripts/SearchTranslation.js
 
 plugins:
   - search:
@@ -207,7 +207,7 @@ nav:
       - How do I create and use Templates?: user/faq_templates.md
       - Where are my drafts and sent mail?: user/faq_drafts_sent.md
       - How to view MIME headers and MIME full content?: user/mime_headers.md
-      - Summarizing Emails with Domino IQ?: user/dominoiq_summarize.md
+      - Summarizing Emails with Domino IQ: user/dominoiq_summarize.md
       - Have Domino IQ suggest a reply email: user/dominoiq_reply.md
       - How can I view file attachments before I download them?: user/preview_attachments.md
       - How can I manage my archived mail?: user/faq_archived_mail_.md
@@ -219,7 +219,7 @@ nav:
           - How do I use an alternate address when sending mail from my mail file?: user/how_can_i_sent_mail_from_alias_addresses.md
           - How do I use an alternate address when sending mail from a shared mail file?: user/how_can_i_sent_mail_from_a_shared_mail_file.md
           - How do I use an alternate address when sending mail from a delegated mail file?: user/how_can_i_sent_mail_from_a_delegated_mail_address.md
-          - How to search for emails from a user sent by a delegatee?: user/how_to_search_emails_sent_in_deligation_mode.md
+      - How to search for emails from a user sent by a delegatee?: user/how_to_search_emails_sent_in_deligation_mode.md
   - How do I manage my calendar?:
       - user/faq_calendar.md
       - How do I use the Calendar Inbox?: user/faq_calendar_inbox.md
@@ -294,7 +294,6 @@ nav:
       - Controlling the concurrent iCalendar imports allowed: admin/controlling_the_concurrent_icalendar_imports_allowed.md
       - Enabling file preview using Domino File Viewer: admin/enabling_file_preview_using_domino1202.md
       - Enabling advanced Modify on Send extension: admin/enabling_advanced_modify_on_send_extension.md
-      - Enabling Domino Workspace files service: admin/enabling_dw_files_service.md
       - Controlling if the default online meeting is used automatically: admin/options_online_meeting.md
       - Access email messages through direct URLs: admin/email_directURLs.md
       - Configuring XHR timeouts: admin/EnhanccetimeoutXHR.md

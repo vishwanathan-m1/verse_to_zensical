@@ -1,73 +1,13 @@
 <!-- Elements added to main will be displayed on all pages -->
+<!--March2023-->
+
 {% extends "base.html" %}
 {% block outdated %}
   You're not viewing the latest version.
-  {% if base_url == '.' or not base_url %}
-    <a href="../latest/{{ page.url }}">
-  {% else %}
-    <a href="{{ base_url }}/../latest/{{ page.url }}">
-  {% endif %}
+  <a href="{{ base_url ~ '/../latest/' ~ page.url }}">
     <strong>Click here to go to latest.</strong>
   </a> 
 {% endblock %}
-
-{% block content %}
-  {# Dynamically tracks the current topic path across instant-loading page shifts #}
-  <div id="mkdocs-page-path-tracker" data-path="{{ page.url }}" style="display:none;"></div>
-  {{ super() }}
-{% endblock %}
-
-{% block scripts %}
-  {{ super() }}
-  <script>
-    (function() {
-      // Prevents binding multiple duplicated listeners if the script block re-executes
-      if (window.mkdocsVersionInterceptorAttached) return;
-      window.mkdocsVersionInterceptorAttached = true;
-
-      // Intercept version dropdown clicks at the capture phase (true) to override theme defaults
-      document.addEventListener("click", function(event) {
-        var link = event.target.closest(".md-version__link");
-        if (!link) return;
-
-        // Immediately halt the theme's built-in redirect logic
-        event.preventDefault();
-        event.stopPropagation();
-
-        // Safely fetch the topic path from the active DOM tracker
-        var tracker = document.getElementById("mkdocs-page-path-tracker");
-        var pagePath = tracker ? tracker.getAttribute("data-path") : "";
-        
-        var baseHref = link.getAttribute("href");
-        if (!baseHref) return;
-        
-        if (!baseHref.endsWith("/")) {
-          baseHref += "/";
-        }
-
-        // Construct the full path to the topic inside the chosen version
-        var targetUrl = baseHref + pagePath;
-
-        // Perform a quick asynchronous background validation check
-        fetch(targetUrl, { method: 'GET' })
-          .then(function(response) {
-            // If the server confirms the topic exists (Status 200), route directly to it
-            if (response.ok) {
-              window.location.href = targetUrl;
-            } else {
-              // If it returns a 404 or any error code, fall back to that version's home page
-              window.location.href = baseHref;
-            }
-          })
-          .catch(function() {
-            // Safety fallback to the version home page if network drops or CORS blocks testing
-            window.location.href = baseHref;
-          });
-      }, true); // The 'true' flag activates the capture phase to bypass theme scripts safely
-    })();
-  </script>
-{% endblock %}
-
 
 {% block announce %}
 <div>
@@ -80,12 +20,16 @@
   <button class="dropbtn">Resources <i class="fa fa-caret-down"></i></button> 
   <div class="dropdown-content">
   <a href="https://support.hcltechsw.com" target="_blank">Customer Support</a>
-  <a href="https://academy.hcltechsw.com" target="_blank">Software Academy</a>
+  <a href="https://hclsoftwareu.hcltechsw.com/hcl-dx" target="_blank">HCLSoftware U</a>
   <a href="https://support.hcltechsw.com/community" target="_blank">Community Forums</a>
 
 </div>
 </div>
   
+<div style='float: right;display: inline-block;width: 140px;margin-top: -7px;'>
+<span id='scLangSelectorContainer' style='z-index: 1000; position: absolute; right:200.95px;'/>
+</div>
+
   <!-- Uncomment the following announcement if you need it -->
   <!--
  <div class="md-banner--feedback" style="display:inline">
@@ -101,7 +45,11 @@
 {% endblock %}
 
 {% block extrahead %}
+  {% if page and page.meta and page.meta.robots %}
+    <meta name="robots" content="{{ page.meta.robots }}" />
+  {% else %}
+    <meta name="robots" content="index, follow" />
+  {% endif %}
   <meta property="og:image" content="https://opensource.hcltechsw.com/digital-experience/site-thumbnail.png" />
-  
 {% endblock %}
 

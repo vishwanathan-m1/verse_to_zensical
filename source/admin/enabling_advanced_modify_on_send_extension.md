@@ -7,5 +7,5 @@ This enhancement is disabled by default and can enabled by applying a notes.ini 
 **Related information**  
 
 
-[Verse Extension documentation](https://opensource.hcltechsw.com/Verse-Extension-Documentation/docs/extension-points/#modify-on-send)
+[{{ shortVerseProductName }} Extension documentation](https://opensource.hcltechsw.com/{{ shortVerseProductName }}-Extension-Documentation/docs/extension-points/#modify-on-send)
 

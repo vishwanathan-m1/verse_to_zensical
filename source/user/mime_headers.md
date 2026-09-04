@@ -1,12 +1,12 @@
 # How to view MIME headers and MIME full content?
 
-Click the ellipsis \(![this is the ellipsis icon](images/ellipsis.png)\) icon on the received messages and click the Show MIME Header or Show MIME Full action.
+1. Click the ellipsis \(![this is the ellipsis icon](images/ellipsis.png)\) icon on the received messages.
 
-![This is the procedure on how to view the MIME headers and MIME full content.](images/showmime.png)
+       ![](images/MIME-img.png)
+   
+2. Click the Show MIME Header or Show MIME Full action.
+3. Click Close.
 
-![this the image of the MIME Header.](images/mimeheader.png)
-
-![this the image of the MIME full.](images/mimefull.png)
 
 **Parent topic:** [How do I master mail?](../user/Verse_mail.md)
 

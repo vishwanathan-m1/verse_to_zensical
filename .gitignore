@@ -13,3 +13,4 @@ site/*
 */sitemap.xml.gz
 **/.DS_Store
 .venv/
+docs/

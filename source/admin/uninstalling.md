@@ -1,6 +1,6 @@
 # Uninstalling
 
-If you need to uninstall Verse™ application files, simply stop the Domino server, remove the Verse .jar files, and then restart the Domino server.
+If you need to uninstall {{ shortVerseProductName }}™ application files, simply stop the Domino server, remove the {{ shortVerseProductName }} .jar files, and then restart the Domino server.
 
 1.  Stop the Domino server. From the server console, enter:
 
@@ -8,7 +8,7 @@ If you need to uninstall Verse™ application files, simply stop the Domino serv
     quit
     ```
 
-2.  Delete the existing Verse jar files from the following directory:
+2.  Delete the existing {{ shortVerseProductName }} jar files from the following directory:
 
     For installs on Domino versions prior to 14.5: &lt;Domino data directory&gt;/domino/workspace/applications/eclipse/plugins
 

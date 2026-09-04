@@ -10,7 +10,7 @@ Starting from HCL Verse 3.1 users now have the ability to preview file attachmen
 
     If Connections integration is enabled, this feature is disabled regardless of any of the above settings. Connections integration is enabled by setting `VOP_LLN2_BSSUISERVER_URL` in notes.ini. If this feature doesn't seem to be working, make sure your notes.ini does not specify this setting.
 
-    For more information on disabling Connections File Viewer option in HCL Verse, see the article [KB0077057](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0077057).
+    For more information on disabling Connections File Viewer option in {{ fullVerseProductName }}, see the article [KB0077057](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0077057).
 
 
 **Related information**  

@@ -1,6 +1,6 @@
 # How can mail rules help me organize my incoming mail?
 
-Mail rules help you direct the flow of your incoming mail by choosing actions to take based on conditions that you specify. You can see all the mail rules in the Verse setting.
+Mail rules help you direct the flow of your incoming mail by choosing actions to take based on conditions that you specify. You can see all the mail rules in the {{ shortVerseProductName }} setting.
 
 Here are a few examples of how mail rules can help you but there are many variations possible:
 
@@ -9,9 +9,9 @@ Here are a few examples of how mail rules can help you but there are many variat
 -   Delete all messages received from a particular internet domain.
 -   Use a Junk Mail rule to move all future mail received from a particular sender to the Junk folder. See **How do I use the Junk Mail rule?** at the end of this topic.
 
-Mail rules that you create in HCL Notes® carry over to HCL Verse and vice versa. To create a mail rule:
+Mail rules that you create in HCL Notes® carry over to {{ fullVerseProductName }} and vice versa. To create a mail rule:
 
-1.  Select **Verse Settings** &gt; **Mail** and then scroll to the **Mail Rules** section.
+1.  Select **{{ shortVerseProductName }} Settings** &gt; **Mail** and then scroll to the **Mail Rules** section.
 2.  Click **New Rule**
 3.  Enter a name for the rule.
 4.  Select at least one condition for the rule and any exceptions.

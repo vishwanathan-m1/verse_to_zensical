@@ -1,7 +1,6 @@
-{% if isDominoWorkspace %}
-# How do I send file links and save mail attachments to Domino files?
+# How do I send file links and save mail attachments to Domino Workspace Files?
 
-Instead of clogging up mailboxes with heavy attachments, {{ shortVerseProductName }} allows you to send secure hyperlinks and offload incoming files directly to your Domino files.
+Instead of clogging up mailboxes with heavy attachments, {{ shortVerseProductName }} allows you to send secure hyperlinks and offload incoming files directly to your Domino Workspace Files.
 
 Domino Files is a centralized file repository that gives you the ability to securely store and share files with others. Instead of sending heavy email attachments, this integration allows you to send a link of any file hosted on Domino Files directly to a user. Additionally, you have the ability to upload received email attachments straight to Domino Files, keeping your inbox light.
 
@@ -15,12 +14,12 @@ Domino Files is a centralized file repository that gives you the ability to secu
 4. Click the Files icon (or the Box icon, depending on your corporate environment) on the formatting bar.
 5. Browse your cloud folders, check the files you want to share.
 6. Click **Insert Links**.
-![HCL Verse "New Message" window showing the "Insert Links" menu open. A file named "Project proposal.docx" is selected from "My Folders" to be linked.](../user/images/insert_links.png)
+![{{ fullVerseProductName }} "New Message" window showing the "Insert Links" menu open. A file named "Project proposal.docx" is selected from "My Folders" to be linked.](../user/images/insert_links.png)
 7. Click **Send**.
-
+{% if isVerse %}
 !!! note
     When you click Send, it opens a share linked files. The system will automatically attempt to grant file-viewing permissions to everyone on your To/Cc list behind the scenes.
-
+{% endif %}
 ## How to upload an email attachment to your Domino files?
 ### Procedure:
 Use this method when someone sends you a heavy file and you want to save it to your cloud drive and clear up space in your inbox.
@@ -33,4 +32,3 @@ Use this method when someone sends you a heavy file and you want to save it to y
 
 !!! note
     The link redirects to a new page containing your saved cloud storage files.
-{% endif %}

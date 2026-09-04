@@ -4,7 +4,7 @@ You can allow users to add photos of themselves through Domino, Connections, or 
 
 The following table describes each method and how to enable it.
 
-**Note:** How Photos are cached in the browser client is determined by the cache control settings from the image source, whether the images are served from Domino, Connections, or Gravatar. This is still true when using the`resolvePhotoUrlDomains` setting available for Domino and described in the following table; Verse remembers the cache settings the image was served with from the original source and applies them when serving the data URI. Customers using Connections or Domino who wish to avoid having user photos stored in the browser cache can change the cache options through server settings or a proxy. Gravatar manages its own cache headers, if browser caching is unacceptable Gravatar should not be used.
+**Note:** How Photos are cached in the browser client is determined by the cache control settings from the image source, whether the images are served from Domino, Connections, or Gravatar. This is still true when using the`resolvePhotoUrlDomains` setting available for Domino and described in the following table; {{ shortVerseProductName }} remembers the cache settings the image was served with from the original source and applies them when serving the data URI. Customers using Connections or Domino who wish to avoid having user photos stored in the browser cache can change the cache options through server settings or a proxy. Gravatar manages its own cache headers, if browser caching is unacceptable Gravatar should not be used.
 
 <table markdown id="table_ux4_zxs_x4b"><thead><tr><th>
 
@@ -20,7 +20,7 @@ Domino
 
 </td><td>
 
-From Verse, users can add photos of themselves in the following ways:
+From {{ shortVerseProductName }}, users can add photos of themselves in the following ways:
 
 -   Upload images from their computers or take photos of themselves to upload. The images are saved in the Basics tab of their Person documents in the Domino directory. A URL to the uploaded image is also added to **Photo URL** field in the Miscellaneous tab.
 -   Provide a URL to images, which are added to the **Photo URL** field in the Miscellaneous tab. The URL must be to a web image resource that doesn't require additional authentication or that is in the same SSO domain as the Domino server.
@@ -49,7 +49,7 @@ Connections
 
 </td><td>
 
-From Verse, users can upload images from their computers or take photos to upload to their Connections profiles. This feature is enabled automatically if you configure Verse to integrate with Connections.
+From {{ shortVerseProductName }}, users can upload images from their computers or take photos to upload to their Connections profiles. This feature is enabled automatically if you configure {{ shortVerseProductName }} to integrate with Connections.
 
 </td></tr><tr><td>
 
@@ -57,8 +57,8 @@ Gravatar
 
 </td><td>
 
-Users complete the following steps to display photos in Verse: 1.  Go to www.gravatar.com.
-2.  Create an account using their Verse email addresses. Gravatar uses WordPress for account creation. WordPress sends emails to the users.
+Users complete the following steps to display photos in {{ shortVerseProductName }}: 1.  Go to www.gravatar.com.
+2.  Create an account using their {{ shortVerseProductName }} email addresses. Gravatar uses WordPress for account creation. WordPress sends emails to the users.
 3.  Open the WordPress emails and activate their accounts.
 4.  Add images to Gravatar.
 

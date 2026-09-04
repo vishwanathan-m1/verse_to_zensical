@@ -1,6 +1,6 @@
 # How do I chat with people important to me?
 
-HCL Verse® gives you intuitive, integrated access to HCL Sametime® Chat in a way you've never had before. You can message colleagues all with the click of a button from the Verse interface.
+{{ fullVerseProductName }}® gives you intuitive, integrated access to HCL Sametime® Chat in a way you've never had before. You can message colleagues all with the click of a button from the {{ shortVerseProductName }} interface.
 
 **Note:** Sametime Chat can be replaced with another product by your organization. For help with other chat products, see their documentation.
 
@@ -20,9 +20,9 @@ You can also start a chat with someone from your contacts list, from a contact's
 
 ## **Using the Sametime Connect Client**
 
-By following a few easy steps, you can use the Sametime Connect Client to chat with colleagues from Verse instead of the embedded web chat client. The Sametime Connect Client has mas many more features. You must use Sametime Connect Client V9.0.1 or later.
+By following a few easy steps, you can use the Sametime Connect Client to chat with colleagues from {{ shortVerseProductName }} instead of the embedded web chat client. The Sametime Connect Client has mas many more features. You must use Sametime Connect Client V9.0.1 or later.
 
-The order in which clients are started is important. Start by logging in with the Sametime Connect Client. Your administrator can tell you which community to log into. Next, log into Verse, followed by the web chat client. When you start a chat with people in the Important to Me bar, or click on a business card, you'll then open the Sametime Connect Client window.
+The order in which clients are started is important. Start by logging in with the Sametime Connect Client. Your administrator can tell you which community to log into. Next, log into {{ shortVerseProductName }}, followed by the web chat client. When you start a chat with people in the Important to Me bar, or click on a business card, you'll then open the Sametime Connect Client window.
 
 ## Using chat option in offline and do not disturb mode
 

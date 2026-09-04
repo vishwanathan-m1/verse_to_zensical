@@ -1,6 +1,6 @@
 # How do I use the Calendar Bar?
 
-HCL Verse goes beyond the straight forward calendar functionality you're used to by giving you a visual and intuitive calendar experience integrated right in your message Inbox. It's almost like having a personal assistant.
+{{ fullVerseProductName }} goes beyond the straight forward calendar functionality you're used to by giving you a visual and intuitive calendar experience integrated right in your message Inbox. It's almost like having a personal assistant.
 
 From the Inbox, you'll notice is the Calendar Bar that runs the length of the bottom of the screen and shows your entire day at a glance.![The Calendar Bar](images/bar_callouts2.jpg)
 

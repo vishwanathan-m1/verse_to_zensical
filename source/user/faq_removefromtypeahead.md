@@ -8,9 +8,9 @@ You can remove addresses from this list. For example, if there are two addresses
 
 To remove an address from your type-ahead list:
 
-1.  Open **Verse Settings:**
+1.  Open **{{ shortVerseProductName }} Settings:**
 
-    ![Verse Settings selected](images/Verse%20Settings.png)
+    ![{{ shortVerseProductName }} Settings selected](images/{{ shortVerseProductName }}%20Settings.png)
 
 2.  Go to **General** settings.
 3.  Select the address to remove from type-ahead and click **Remove from Type-ahead**.
@@ -29,5 +29,5 @@ Should you want to add it back later, follow these steps:
     ![With George Tompkins/Hannover selected, click Allow in Type-ahead](images/allowintypeahead.png)
 
 
-**Parent topic:** [How do I personalize Verse?](../user/faq_settings.md)
+**Parent topic:** [How do I personalize {{ shortVerseProductName }}?](../user/faq_settings.md)
 

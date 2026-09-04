@@ -1,6 +1,6 @@
 # Controlling if the default online meeting is used automatically
 
-HCL Verse 3.2.3 allows end users to go into their **Verse Settings** and change the value of the *Always add an online meeting when creating a calendar event* preference through the **Calendar** &gt; **Define Default Meeting**
+HCL Verse 3.2.3 allows end users to go into their **{{ shortVerseProductName }} Settings** and change the value of the *Always add an online meeting when creating a calendar event* preference through the **Calendar** &gt; **Define Default Meeting**
 
 The notes.ini setting `VOP_ALWAYS_ADD_ONLINE_MEETING_DEFAULT` will control the default of this preference for all users on the Domino server.
 
@@ -25,5 +25,5 @@ The default setting is to automatically add the default online meeting.
 </td></tr></tbody>
 </table>If `VOP_ALWAYS_ADD_ONLINE_MEETING_DEFAULT` is not in notes.ini, the default is to add the default online meeting automatically.
 
-**Note:** The notes.ini setting does not lock the value. The end user can go to their **Verse Settings** page and change the value as needed.
+**Note:** The notes.ini setting does not lock the value. The end user can go to their **{{ shortVerseProductName }} Settings** page and change the value as needed.
 

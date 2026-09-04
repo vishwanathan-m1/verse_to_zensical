@@ -4,7 +4,7 @@ Accessibility features assist users who have a disability, such as restricted mo
 
 ## Overview
 
-For administrators, no accessibility features are specific to HCL Verse™ administration, as its configuration and administration is integrated with HCL Domino®. For information on Domino accessibility features, see the topic **Accessibility features for Domino Administrators** in the [HCL Domino documentation](https://help.hcltechsw.com/domino/domino_welcome.html).
+For administrators, no accessibility features are specific to {{ fullVerseProductName }} administration, as its configuration and administration is integrated with HCL Domino®. For information on Domino accessibility features, see the topic **Accessibility features for Domino Administrators** in the [HCL Domino documentation](https://help.hcltechsw.com/domino/domino_welcome.html).
 
 ## Keyboard shortcuts
 

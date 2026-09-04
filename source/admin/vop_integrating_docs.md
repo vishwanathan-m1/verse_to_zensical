@@ -1,6 +1,6 @@
 # Integrating with HCL Connections Docs
 
-You can configure HCL Verse™ to work with HCL Connections Docs™ 2.0 to get an enhanced preview for file attachments. Integration with Docs enables Verse users to preview PDF, Microsoft Office, OpenOffice and other types of file attachments when reading and composing messages, without having to download those attachments first.
+You can configure {{ fullVerseProductName }} to work with HCL Connections Docs™ 2.0 to get an enhanced preview for file attachments. Integration with Docs enables {{ shortVerseProductName }} users to preview PDF, Microsoft Office, OpenOffice and other types of file attachments when reading and composing messages, without having to download those attachments first.
 
 **Note:**
 
@@ -8,9 +8,9 @@ You can configure HCL Verse™ to work with HCL Connections Docs™ 2.0 to get a
 -   Do not use the iNotes\_WA\_Security\_NonceCheck=0 notes.ini setting on the server. Doing so will prevent attachment previewing.
 
 1.  Install HCL Connections Docs 2.0. For information, see the [HCL Connections Docs documentation](https://help.hcl-software.com/connections/latest/admin/install/t_inst_deploy_file_viewr.html).
-2.  Enable CORS on J Docs to allow cross origin requests. Verse uses Docs JavaScript API to communicate with Docs. To enable CORS access, the Domino server's domain name must be added into the WhiteDomainList of Docs. For more information, see the [HCL Connections Docs documentation](https://ds_infolib.hcltechsw.com/ldd/lcwiki.nsf/xpAPIViewer.xsp?lookupName=HCL+Connections+8.0+API+Documentation#action=openDocument%26res_title=Cross-Origin_Resource_Sharing_80%26content=apicontent).
+2.  Enable CORS on J Docs to allow cross origin requests. {{ shortVerseProductName }} uses Docs JavaScript API to communicate with Docs. To enable CORS access, the Domino server's domain name must be added into the WhiteDomainList of Docs. For more information, see the [HCL Connections Docs documentation](https://ds_infolib.hcltechsw.com/ldd/lcwiki.nsf/xpAPIViewer.xsp?lookupName=HCL+Connections+8.0+API+Documentation#action=openDocument%26res_title=Cross-Origin_Resource_Sharing_80%26content=apicontent).
 
-    **Note:** Verse communicates with Docs' Viewer component. So in addition to concord-config.json, WhiteDomainList field inside viewer-config.json also needs to be updated.
+    **Note:** {{ shortVerseProductName }} communicates with Docs' Viewer component. So in addition to concord-config.json, WhiteDomainList field inside viewer-config.json also needs to be updated.
 
     Example:
 
@@ -26,7 +26,7 @@ You can configure HCL Verse™ to work with HCL Connections Docs™ 2.0 to get a
 
 3.  Enable DAOS on the Domino server to improve preview performance.
 
-    Domino Attachment and Object Service \(DAOS\) enables an attachment to be identified using a unique key \(DAOS key\) that's generated based on the attachment data. For more information on DAOS, see **Attachment consolidation** in the [HCL Domino documentation](https://help.hcltechsw.com/domino/welcome/index.html). When previewing an attachment in a DAOS-enabled mail file, Verse will use the DAOS key to check if the attachment has already been cached in Docs. This avoids having to transfer the attachment again if it has already been cached.
+    Domino Attachment and Object Service \(DAOS\) enables an attachment to be identified using a unique key \(DAOS key\) that's generated based on the attachment data. For more information on DAOS, see **Attachment consolidation** in the [HCL Domino documentation](https://help.hcltechsw.com/domino/welcome/index.html). When previewing an attachment in a DAOS-enabled mail file, {{ shortVerseProductName }} will use the DAOS key to check if the attachment has already been cached in Docs. This avoids having to transfer the attachment again if it has already been cached.
 
 4.  Add `Create_R85_Databases=1` to Domino server's notes.ini and restart Domino.
 5.  From the server console, enter: `load compact -c` to upgrade mail files. This will perform a copy style compact of all databases and upgrade mail files to the current ODS level.

@@ -2,9 +2,11 @@
 
 When you are a delegate for someone else's mail file, you can choose which of their alias addresses to use when you send mail on their behalf.
 
+{% if isVerse %}
 This feature requires Domino version 12.0.1 FP1 or higher. All mail files should use the Domino 12 mail template.
+{% endif %}
 
-1.  Click **Verse Settings** &gt; **Mail** and in the **Sent From Addresses** section select **Enable sending message from your email aliases**.
+1.  Click **{{ shortVerseProductName }} Settings** &gt; **Mail** and in the **Sent From Addresses** section select **Enable sending message from your email aliases**.
 
 2.  Click the ![delegation panel icon](images/delegationbutton.png) icon in the navigation bar to open the delegation panel for Mail and Calendar Access list.
 

@@ -43,7 +43,7 @@ See [Configuring XHR timeouts](../admin/EnhanccetimeoutXHR.md) for more informat
 
 
 {% if isDominoWorkspace %}
-**Parent topic:** [What's new in Verse 3.2.7?](../whats_new/whats_new_3.2.7.md)
-{% else %}
 **Parent topic:** [What's new in Domino Workspace?](../whats_new/whats_new_3.2.7.md)
+{% else %}
+**Parent topic:** [What's new in Verse 3.2.7?](../whats_new/whats_new_3.2.7.md)
 {% endif %}

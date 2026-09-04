@@ -12,7 +12,7 @@ The following features are also available.
 
 ## Online meeting Configuration
 
-When you schedule a meeting, you can select the online meeting option. The meeting that is chosen as the default meeting in the list can be configured in **Verse Settings**. The list of meetings in the drop down are the meetings that are configured in the Verse Settings page. You can navigate to the **Online Meeting Configuration** section of **Verse Settings** by choosing the **Configure Meetings** option in the meeting drop down list.
+When you schedule a meeting, you can select the online meeting option. The meeting that is chosen as the default meeting in the list can be configured in **{{ shortVerseProductName }} Settings**. The list of meetings in the drop down are the meetings that are configured in the {{ shortVerseProductName }} Settings page. You can navigate to the **Online Meeting Configuration** section of **{{ shortVerseProductName }} Settings** by choosing the **Configure Meetings** option in the meeting drop down list.
 
 ![Online meeting preferences](images/onlinemeeting.png)
 
@@ -62,95 +62,24 @@ Create a reminder. For example, remind yourself to fill out your time sheet each
 
 Click **Options** and select any of these options:
 
-<table markdown id="table_rhg_kbt_4lb"><thead><tr><th>
+| Option | Description |
+|---|---|
+| **Sign** | Digitally sign the meeting invitation. |
+| **Encrypt** | Encrypt the meeting invitation. |
+| **Mark Private** | Prevent someone who manages your calendar from reading the content of the meeting. |
+| **Request Response** | Receive a notice from each optional and required attendee, room, and resource that responds. |
+| **Return Receipt** | Receive a message from each attendee who opens the invitation. |
+| **Remind me** | Choose when to receive a reminder about the meeting. |
+| **Show as** | Select **Busy** to indicate to others that you are busy at the selected time. Select **Available** to show that you are available. |
+| **Delivery Priority** | Select one of the following options:<br>• **High**: Route the invitation immediately and display a High priority icon next to the invitation in each recipient's Inbox.<br>• **Normal**: Route the invitation the next time your mail server sends mail (default).<br>• **Low**: Wait until off-peak hours to route the invitation (usually between midnight and 6:00 AM). |
+| **Delivery Report** | Select one of the following options:<br>• **None**: Don't send delivery reports.<br>• **Only on failure**: Send a report when invitations can't be delivered.<br>• **Confirm delivery**: Send reports when invitations are delivered.<br>• **Trace entire path**: Send a report from each server through which an invitation is routed and a final report indicating whether the invitation was delivered. |
 
-Option
-
-</th><th>
-
-Description
-
-</th></tr></thead><tbody><tr><td>
-
-**Sign**
-
-</td><td>
-
-Digitally sign the meeting invitation.
-
-</td></tr><tr><td>
-
-**Encrypt**
-
-</td><td>
-
-Encrypt the meeting invitation.
-
-</td></tr><tr><td>
-
-**Mark Private**
-
-</td><td>
-
-Prevent someone who manages your calendar from reading the content of the meeting.
-
-</td></tr><tr><td>
-
-**Request Response**
-
-</td><td>
-
-Receive a notice from each optional and required attendee, room, and resource that responds.
-
-</td></tr><tr><td>
-
-**Return Receipt**
-
-</td><td>
-
-Receive a message from each attendee who opens the invitation.
-
-</td></tr><tr><td>
-
-**Remind me**
-
-</td><td>
-
-Choose when to receive a reminder about the meeting.
-
-</td></tr><tr><td>
-
-**Show as**
-
-</td><td>
-
-Select **Busy** to indicate to others that you are busy at the selected time. Select **Available** to show that you are available.
-
-</td></tr><tr><td>
-
-**Delivery Priority**
-
-</td><td>
-
-Select one of the following options: -   **High** Route the invitation immediately and display a High priority icon next to the invitation in each recipient's Inbox.
--   **Normal** Route the invitation the next time your mail server sends mail \(default\).
--   **Low** Wait until off-peak hours to route the invitation \(usually between midnight and 6:00 AM\).
-
-</td></tr><tr><td>
-
-**Delivery Report**
-
-</td><td>
-
-Select one of the following options: -   **None** Don't send delivery reports.
--   **Only on failure** Send a report when invitations can't be delivered.
--   **Confirm delivery** Send reports when invitations are delivered.
--   **Trace entire path** Send a report from each server through which an invitation is routed and a final report indicating whether the invitation was delivered.
-
-</td></tr></tbody>
-</table>## Confirm meeting as a chair
-
+## Confirm meeting as a chair
+{% if isVerse %}
 The HCL Verse 3.2.1 release allows the chair of a meeting to confirm the meeting. Confirming a meeting will send all invitees a Confirmation notice. To confirm a meeting, go to **Calendar**. Open the meeting and click on **Confirm**. Optionally, type comments to add to the Confirmation notice and click OK.
+{% else %}
+The chair of a meeting can confirm the meeting. Confirming a meeting will send all invitees a Confirmation notice. To confirm a meeting, go to **Calendar**. Open the meeting and click on **Confirm**. Optionally, type comments to add to the Confirmation notice and click OK.
+{% endif %}
 
 ![Confirm meeting as a chair](images/Confirm_meeting.png)
 
