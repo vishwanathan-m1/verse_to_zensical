@@ -1,6 +1,6 @@
 # How do I import events from an internet calendar?
 
-You can import single and repeat events from an internet calendar \(.ics\) file into your HCL Verse calendar. For example, import events from a Google calendar .ics file.
+You can import single and repeat events from an internet calendar \(.ics\) file into your {{ fullVerseProductName }} calendar. For example, import events from a Google calendar .ics file.
 
 The .ics file that you import can be on your local computer or attached to a mail message.
 
@@ -11,7 +11,7 @@ The .ics file that you import can be on your local computer or attached to a mai
 
 To import an .ics file saved on your computer:
 
-1.  From your Verse calendar, click the import calendar button at the top, right:
+1.  From your {{ shortVerseProductName }} calendar, click the import calendar button at the top, right:
 
     ![Import calendar icon](images/import_cal_icon.jpg)
 

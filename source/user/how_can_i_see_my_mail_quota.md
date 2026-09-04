@@ -13,14 +13,20 @@ When your mail file is below the storage limit, you get information about your u
 ![When you are below storage quota](images/MailQuota_Under.png)
 
 ## When you are approaching quota
-
+{% if isVerse %}
 When your mail file is almost out of storage space, you should free up space by deleting messages, or emptying the trash, or archiving messages if you have an archive mail file.
+{% else %}
+When your mail file is almost out of storage space, you should free up space by deleting messages or emptying the trash.
+{% endif %}
 
 ![When your storage is about to get over](images/MailQuota_Over.png)
 
 ## When you exceed quota
-
+{% if isVerse %}
 When you exceed quota, you can't send or receive messages. When your mail file is out of storage space, you should free up space by deleting messages, or emptying the trash, or archiving messages if you have an archive mail file.
+{% else %}
+When you exceed quota, you can't send or receive messages. When your mail file is out of storage space, you should free up space by deleting messages or emptying the trash.
+{% endif %}
 
 ![When you have exceeded the storage quota](images/MailQuota_Exceeded.png)
 
@@ -28,8 +34,7 @@ When you exceed quota, you can't send or receive messages. When your mail file i
 
 **Related information**  
 
-
-[How can I manage my archived mail?](faq_archived_mail_.md)
-
-[Domino administrator documentation on setting mail file quotas](https://help.hcltechsw.com/domino/14.5.0/admin/conf_settingmailfilequotas_c.html)
-
+[Domino administrator documentation on setting mail file quotas](https://help.hcltechsw.com/domino/14.5.1/admin/conf_settingmailfilequotas_c.html)
+{% if isVerse %}
+[How can I manage my archived mail?](../user/faq_archived_mail_.md)
+{% endif %}

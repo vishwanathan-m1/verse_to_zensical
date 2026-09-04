@@ -19,9 +19,9 @@ You can create, update, and delete meetings on the following services- GoToMeeti
 
 To enable any listed meeting services, follow these steps:
 
-1.  Go to **Verse Settings** &gt; **Calendar** &gt; **Online Meeting Service Configuration**.
+1.  Go to **{{ shortVerseProductName }} Settings** &gt; **Calendar** &gt; **Online Meeting Service Configuration**.
 
-    ![Online Meeting Service Configuration in Verse Settings](images/DOMI_1.png)
+    ![Online Meeting Service Configuration in {{ shortVerseProductName }} Settings](images/DOMI_1.png)
 
 2.  Select the meeting service, that you want to enable, from the list. In the **Enable meeting service** dialog box, click on **Get Token**.
 
@@ -31,7 +31,7 @@ To enable any listed meeting services, follow these steps:
 
 4.  Copy the token, return to the **Enable meeting service** dialog box, and paste the value in the token box. Click **Save**. Your selected meeting service is now enabled.
 
-    Once the service is enabled, you can disable the service or edit the service details in the **Verse Settings** &gt; **Calendar** &gt; **Online Meeting Service Configuration**.
+    Once the service is enabled, you can disable the service or edit the service details in the **{{ shortVerseProductName }} Settings** &gt; **Calendar** &gt; **Online Meeting Service Configuration**.
 
     ![Edit or disable saved meeting services](images/DOMI_3.png)
 

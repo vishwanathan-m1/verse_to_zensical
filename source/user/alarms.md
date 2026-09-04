@@ -1,6 +1,6 @@
 # How do I use calendar alarms?
 
-With calendar alarms, HCL Verse displays a small message on your desktop before your meeting is about to begin. Clicking the notification takes you right to the meeting event in your calendar.
+With calendar alarms, {{ fullVerseProductName }} displays a small message on your desktop before your meeting is about to begin. Clicking the notification takes you right to the meeting event in your calendar.
 
 ![pop-up alarm notification](images/alarm_notification.png)
 
@@ -12,7 +12,7 @@ There are no additional applications to install. Calendar alarms and alerts are 
 
 ![Calendar invitation with options to set when you want to be notified of the upcoming event](images/alarm_cal_time_before.png)
 
-To turn off calendar alarms or change when they are shown by default, click **Verse Settings** from your profile drop down and go to the **Display alarm notifications** setting.
+To turn off calendar alarms or change when they are shown by default, click **{{ shortVerseProductName }} Settings** from your profile drop down and go to the **Display alarm notifications** setting.
 
 **Note:** This setting only stops alarms from displaying. Alarms will still be set by default when new invitations are created.
 

@@ -1,6 +1,6 @@
 # Upgrading older profiles on Linux
 
-If you upgrade from an HCL Connections release that is earlier than 5.5, on Linux, complete this procedure in Connections 5.5 to upgrade older profiles so that they work in HCL Verse.
+If you upgrade from an HCL Connections release that is earlier than 5.5, on Linux, complete this procedure in Connections 5.5 to upgrade older profiles so that they work in {{ fullVerseProductName }}.
 
 1.  Extract `Connections_5.5_Wizards_lin_aix.tar`:
 

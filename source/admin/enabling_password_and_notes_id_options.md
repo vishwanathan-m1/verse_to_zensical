@@ -1,8 +1,8 @@
 # Enabling password and Notes ID options
 
-As of Verse 1.0.8, features are available in Security settings for users to change the passwords they use to log in to Verse, change their Notes ID passwords, and manage their Notes IDs. This topic describes the configuration requirements for each of these features.
+As of Verse 1.0.8, features are available in Security settings for users to change the passwords they use to log in to {{ shortVerseProductName }}, change their Notes ID passwords, and manage their Notes IDs. This topic describes the configuration requirements for each of these features.
 
-**Note:** These features require Verse running on a Domino 10.0.1 FP2 or later server.
+**Note:** These features require {{ shortVerseProductName }} running on a Domino 10.0.1 FP2 or later server.
 
 For more information on using these features, see [How do I manage passwords and my Notes ID?](../user/faq_manage_ids_t.md).
 
@@ -16,11 +16,11 @@ Requirement
 
 </th></tr></thead><tbody><tr><td>
 
-Change the internet password to use to log in to Verse.1
+Change the internet password to use to log in to {{ shortVerseProductName }}.1
 
 </td><td>
 
-Administrators must enable the following options: -   **Modification of Internet Password** in the Verse tab of the server Configuration document.
+Administrators must enable the following options: -   **Modification of Internet Password** in the {{ shortVerseProductName }} tab of the server Configuration document.
 -   **Allow users to change Internet Password over HTTP** option in Password Management &gt; Basics tab of Security Settings policy.
 
 </td></tr><tr><td>
@@ -55,7 +55,7 @@ Delete your Notes ID from your mail file.
 
 Requires a Notes ID in the mail file
 
- Administrators must enable the option **Allow users to delete their Notes ID from their mail database** in the Verse tab of the server Configuration document.
+ Administrators must enable the option **Allow users to delete their Notes ID from their mail database** in the {{ shortVerseProductName }} tab of the server Configuration document.
 
 </td></tr><tr><td>
 
@@ -65,7 +65,7 @@ Export your Notes ID from your mail file to save a local copy.
 
 Requires a Notes ID in the mail file.
 
- Administrators must enable the option **Allow users to Export their Notes ID** in the Verse tab of the server Configuration document.
+ Administrators must enable the option **Allow users to Export their Notes ID** in the {{ shortVerseProductName }} tab of the server Configuration document.
 
 </td></tr><tr><td>
 

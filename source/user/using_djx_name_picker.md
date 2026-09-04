@@ -1,6 +1,6 @@
 # Using DJX name picker
 
-In HCL Verse 3.2.6, for Japanese customers who are using Domino Japanese eXtension \(DJX\), Verse has added the customized DJX name picker. Verse users will be able to open the DJX name picker when composing an email or creating an event. The name picker offers the ability to pick user names from three different lists categorized by ranked departments, ranked job titles, or ordered by phonetic name.
+In HCL Verse 3.2.6, for Japanese customers who are using Domino Japanese eXtension \(DJX\), {{ shortVerseProductName }} has added the customized DJX name picker. {{ shortVerseProductName }} users will be able to open the DJX name picker when composing an email or creating an event. The name picker offers the ability to pick user names from three different lists categorized by ranked departments, ranked job titles, or ordered by phonetic name.
 
 -   To open the DJX name picker:
     -   When creating a new email, you can click on the **To:** field to open the DJX name picker.

@@ -1,8 +1,8 @@
 # Developer Documentation
 
-You can deploy extensions to enhance the functionality and experience of Verse. To do so, you register your own web applications with Verse that declare one or more extensions.
+You can deploy extensions to enhance the functionality and experience of {{ shortVerseProductName }}. To do so, you register your own web applications with {{ shortVerseProductName }} that declare one or more extensions.
 
-**Note:** For best security, run extensions from a different [origin](https://developer.mozilla.org/en-US/docs/Glossary/Origin) than the Verse application. Extensions that run from the same origin as Verse have full access to the Verse application page content and therefore potentially are less secure. Any extension code that runs from the Verse origin should be reviewed and fully trusted by your organization.
+**Note:** For best security, run extensions from a different [origin](https://developer.mozilla.org/en-US/docs/Glossary/Origin) than the {{ shortVerseProductName }} application. Extensions that run from the same origin as {{ shortVerseProductName }} have full access to the {{ shortVerseProductName }} application page content and therefore potentially are less secure. Any extension code that runs from the {{ shortVerseProductName }} origin should be reviewed and fully trusted by your organization.
 
 Here are some of the enhancements you can make:
 
@@ -14,10 +14,10 @@ Here are some of the enhancements you can make:
 -   Customize the navigation bar by adding or hiding top-level links and adding submenus.
 -   Integrate a third-party file repository.
 
-Verse supports two approaches to deploy your applications/extensions to end users:
+{{ shortVerseProductName }} supports two approaches to deploy your applications/extensions to end users:
 
 -   Deploying extensions using the built-in endpoint
 -   Deploying extensions using a custom endpoint
 
-For more information, see the [Verse developer site](https://opensource.hcltechsw.com/Verse-Extension-Documentation/).
+For more information, see the [{{ shortVerseProductName }} developer site](https://opensource.hcltechsw.com/{{ shortVerseProductName }}-Extension-Documentation/).
 

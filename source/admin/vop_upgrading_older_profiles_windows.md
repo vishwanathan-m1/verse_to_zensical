@@ -1,6 +1,6 @@
 # Upgrading older profiles on Windows
 
-If you upgrade from an HCL Connections release that is earlier than 5.5, on Microsoft Windows, complete this procedure in Connections 5.5 to upgrade older profiles so that they work in HCL Verse.
+If you upgrade from an HCL Connections release that is earlier than 5.5, on Microsoft Windows, complete this procedure in Connections 5.5 to upgrade older profiles so that they work in {{ fullVerseProductName }}.
 
 1.  Copy the following lines into a text editor and save them as `fixhashphoto.cmd` in the `Connections\xkit\connections.sql\profiles` directory. 
 

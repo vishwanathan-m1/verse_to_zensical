@@ -2,7 +2,7 @@
 
 Instead of spending time navigating through multiple documentation pages or manually searching for specific topics, you can simply ask questions in natural language and receive clear, contextual answers based on the available documentation.
 
-Doc IQ helps users find information faster and more efficiently by understanding the intent behind their questions and directing them to the most relevant content. This reduces the time and effort required to locate documentation, improves productivity, and makes it easier to discover related resources. Whether you are looking for a specific procedure, troubleshooting guidance, or product information, Doc IQ provides quick access to the knowledge you need while helping you get the most value from the Verse help documentation.
+Doc IQ helps users find information faster and more efficiently by understanding the intent behind their questions and directing them to the most relevant content. This reduces the time and effort required to locate documentation, improves productivity, and makes it easier to discover related resources. Whether you are looking for a specific procedure, troubleshooting guidance, or product information, Doc IQ provides quick access to the knowledge you need while helping you get the most value from the {{ shortVerseProductName }} help documentation.
 
 It finds relevant information in documentation and knowledge base (KB) articles.
 
@@ -49,7 +49,7 @@ This process helps you quickly understand a topic while still giving access to t
 
 To use the HCL Doc IQ chatbot:
 
-1. Open the chatbot interface on any HCL Verse page.
+1. Open the chatbot interface on any {{ fullVerseProductName }} page.
 2. Enter your question in the text field in plain language.
 3. Press Enter or click the Send button.
 4. Review the chatbot response, which may include:
@@ -81,7 +81,7 @@ For detailed instructions or complex tasks, refer to the documentation topics li
 
 Your feedback helps improve the accuracy and usefulness of the HCL Doc IQ chatbot. By reviewing responses and submitting feedback, you help identify gaps in documentation, unclear answers, or areas where the chatbot can be improved.
 
-Feedback is used to refine chatbot responses, improve documentation coverage, and enhance the overall Verse experience.
+Feedback is used to refine chatbot responses, improve documentation coverage, and enhance the overall {{ shortVerseProductName }} experience.
 
 ## Why provide feedback
 

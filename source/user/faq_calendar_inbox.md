@@ -10,8 +10,10 @@ What can you do here?
 -   Forward Calendar notices to others.
 -   Drag and drop existing events on the Calendar to reschedule if you're the owner, or to propose a new time if you're not.
 -   Copy and paste meeting info to easily create a new invitation with existing content.
-
+{% if isDominoWorkspace %}
+![Calendar inbox](images/DW_calendar_inbox.png)
+{% else %}
 ![Calendar inbox](images/calendar_inbox.png)
-
+{% endif %} 
 **Parent topic:** [How do I manage my calendar?](../user/faq_calendar.md)
 

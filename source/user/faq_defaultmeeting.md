@@ -4,7 +4,7 @@ This enables users to set their preferences for adding online meetings to new ev
 
 **Procedure:**
 
-1.  Go to the **Verse Settings** &gt; **Calendar** &gt; **Define Default Meeting**.
+1.  Go to the **{{ shortVerseProductName }} Settings** &gt; **Calendar** &gt; **Define Default Meeting**.
 2.  Select a meeting from the **Define Default Meeting** dropdown list.
 
     ![Define default meeting in verse settings](images/faq_defaultmeeting.png)
@@ -16,5 +16,5 @@ This enables users to set their preferences for adding online meetings to new ev
 
 For more information, see [Controlling if the default online meeting is used automatically](../admin/options_online_meeting.md).
 
-**Parent topic:** [How do I personalize Verse?](../user/faq_settings.md)
+**Parent topic:** [How do I personalize {{ shortVerseProductName }}?](../user/faq_settings.md)
 

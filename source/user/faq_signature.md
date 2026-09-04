@@ -1,8 +1,8 @@
 # How do I add a signature to my mail messages?
 
-You can add a signature to append to all your mail messages using HCL Verse.
+You can add a signature to append to all your mail messages using {{ fullVerseProductName }}.
 
-You can create a signature for your mail messages by selecting **Verse Settings** from the menu under your photo in the navigation bar. Look for the **Signature** section and click **Edit**. Signatures can be text, images or both. You can choose whether or not to have your signature included in all mail that you compose by selecting **Always add signature**.
+You can create a signature for your mail messages by selecting **{{ shortVerseProductName }} Settings** from the menu under your photo in the navigation bar. Look for the **Signature** section and click **Edit**. Signatures can be text, images or both. You can choose whether or not to have your signature included in all mail that you compose by selecting **Always add signature**.
 
 ![Add a mail signature](images/signature.jpg)
 

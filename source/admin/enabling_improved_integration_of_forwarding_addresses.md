@@ -11,7 +11,7 @@ This feature is off by default but an administrator can enable it. Once enabled,
 
 ![A forwarding address shown after the primary address when addressing a message.](images/wn_forwarding_address.jpg)
 
-1.  To enable this feature, add the following notes.ini setting to the Domino® server that hosts Verse:
+1.  To enable this feature, add the following notes.ini setting to the Domino® server that hosts {{ shortVerseProductName }}:
 
     ```
     VOP_GK_FEATURE_187=1

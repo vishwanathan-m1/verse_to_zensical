@@ -31,7 +31,7 @@ The following features are not available from archived mail:
 -   Composing a message
 -   Creating a calendar event
 -   "Important to me" people in the top bar
--   Verse Settings
+-   {{ shortVerseProductName }} Settings
 -   Mail notifications
 -   Calendar alarms
 -   Offline use

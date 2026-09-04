@@ -31,7 +31,7 @@ GoToMeeting -> gtm
 
 You may need to adjust your proxy/firewall rules to allow this.
 
-**For Sametime only:** The Sametime/ Verse integration needs to be enabled. For more information, see [Configuring integration with HCL Sametime](configuring_integration_with_ibm_sametime.md). Additionally, the following notes.ini is required: `VOP_DOMI_ST_ROOTURL=<url to the Sametime meeting server>.`
+**For Sametime only:** The Sametime/ {{ shortVerseProductName }} integration needs to be enabled. For more information, see [Configuring integration with HCL Sametime](configuring_integration_with_ibm_sametime.md). Additionally, the following notes.ini is required: `VOP_DOMI_ST_ROOTURL=<url to the Sametime meeting server>.`
 
 **Note:** Administrators should note that `iNotes_WA_SametimeProxyServerSSL` and `VOP_DOMI_ST_ROOTURL` are different. `iNotes_WA_SametimeProxyServerSSL` points to the Sametime chat server while `VOP_DOMI_ST_ROOTURL` points to the Sametime meetings server.
 

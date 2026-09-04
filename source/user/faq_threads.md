@@ -1,18 +1,18 @@
 # How do I organize all those mail threads?
 
-HCL Verse adds a graphical thread style to mail messages that lets you keep all your mail organized and easily viewable within your inbox.
+{{ fullVerseProductName }} adds a graphical thread style to mail messages that lets you keep all your mail organized and easily viewable within your inbox.
 
 The following control indicates that messages in the same "thread" are stacked and treated as one entity within the message list:
 
 ![Icon that shows when threads are enabled](images/thread_enabled.jpg)
 
-You an click the control to disable threaded messages, in which case the icon changes as follows:
+You can click the control to disable threaded messages, in which case the icon changes as follows:
 
 ![Icon that shows when threads are disabled](images/thread_disabled.jpg)
 
 When threaded message are enabled, threads with unread messages are bolded, while threads with messages marked high priority are given a red exclamation point icon to easily identify them. Messages that you sent previously are labeled **SENT**.
 
-**Note:** The message list, by default, shows the recipients, date/time, subject, and a snippet of the message on three separate lines. You can switch to a view that shows one message on each line. Click the icon for your current profile picture, then select **Verse Settings**. This menu contains additional configurable settings for HCL Verse.
+**Note:** The message list, by default, shows the recipients, date/time, subject, and a snippet of the message on three separate lines. You can switch to a view that shows one message on each line. Click the icon for your current profile picture, then select **{{ shortVerseProductName }} Settings**. This menu contains additional configurable settings for {{ fullVerseProductName }}.
 
 To open a thread, simply click on it from the message view. The most recent message in the thread displays first, with older messages appearing collapsed underneath it, each with a header displaying the sender, send date and the first few lines of the message. You can uncollapse the older messages by selecting the twistie next to the header.
 
@@ -31,9 +31,6 @@ There is also an action bar, which lets you perform the following functions in t
 -   Move all to folder
 
 -   Remove from folder
-
--   Report-to view
-
 
 **Note:** These actions will not have an effect on incoming messages in the same thread.
 

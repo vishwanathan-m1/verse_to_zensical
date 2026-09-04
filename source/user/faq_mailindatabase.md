@@ -16,7 +16,7 @@ To open a mail-in database that you've been given access to:
     ![HRmailin/Baldwin database with mail icon selected](images/mailin2.png)
 
 
-**Parent topic:** [How do I personalize Verse?](../user/faq_settings.md)
+**Parent topic:** [How do I personalize {{ shortVerseProductName }}?](../user/faq_settings.md)
 
 **Related information**  
 

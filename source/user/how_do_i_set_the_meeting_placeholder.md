@@ -2,7 +2,9 @@
 
 When proposing a new time for a meeting, invitees now have an option to leave a placeholder for the original time of the meeting in their calendar.
 
-**Note:** This option is available when using Verse 3.2.5 and Domino 14.5.
+{% if isVerse %}
+**Note:** This option is available when using Verse 3.2.5 and Domino 14.5. 
+{% endif %}
 
 1.  Open a meeting invitation.
 

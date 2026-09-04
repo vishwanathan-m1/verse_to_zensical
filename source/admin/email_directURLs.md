@@ -1,6 +1,6 @@
 # Access email messages through direct URLs
 
-Starting in Verse 3.2.7, emails can be opened in a browser through the Verse user interface by using a specific URL pattern. After opening the URL, if the user has not logged in, the user will be prompted for credentials. This is useful if a user wants to bookmark a URL for an email or if you have an agent that needs to send links to specific emails in a mail file.
+Starting in {{ shortVerseVersionProductName }}, emails can be opened in a browser through the {{ shortVerseProductName }} user interface by using a specific URL pattern. After opening the URL, if the user has not logged in, the user will be prompted for credentials. This is useful if a user wants to bookmark a URL for an email or if you have an agent that needs to send links to specific emails in a mail file.
 
 ## URL Pattern
 

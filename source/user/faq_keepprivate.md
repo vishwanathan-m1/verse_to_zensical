@@ -1,6 +1,6 @@
 # How can I keep my mails private?
 
-When sending a mail with HCL Verse, you can choose to keep the mail private.
+When sending a mail with {{ fullVerseProductName }}, you can choose to keep the mail private.
 
 Select **Options** in the **Compose** window to see additional options. From there, you can check the **Keep Private** option.
 

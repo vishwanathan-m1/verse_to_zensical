@@ -1,18 +1,20 @@
 # How do I find what I'm looking for?
 
-One of the most powerful and useful features of HCL Verse is its dynamic and analytics-driven search capacity. Search through every piece of mail with precision and ease.
+One of the most powerful and useful features of {{ fullVerseProductName }} is its dynamic and analytics-driven search capacity. Search through every piece of mail with precision and ease.
 
 You'll see that the search bar is above your inbox and below the people in the top bar.
-
+{% if isDominoWorkspace %}
+![Text typed in search bar and refine icon selected.](images/DW_search.png)
+{% else %}
 ![Text typed in search bar and refine icon selected.](images/search.jpg)
-
-Enter text into the bar, and HCL Verse searches through all of your content for matches. Even if you are in your Inbox when you type into the search bar, you're searching all documents. Search will even look for search terms in messages in folders, and suggest search terms for you as you type. Select any of them to run the search without having to type the entire string. Note that the suggestions are only for people and folders.
+{% endif %} 
+Enter text into the bar, and {{ fullVerseProductName }} searches through all of your content for matches. Even if you are in your Inbox when you type into the search bar, you're searching all documents. Search will even look for search terms in messages in folders, and suggest search terms for you as you type. Select any of them to run the search without having to type the entire string. Note that the suggestions are only for people and folders.
 
 Remove any filter from the search bar \(and the resulting search\) by clicking on the "x" next to the name. You can clear all filters from the Search Bar by clicking the "x" at the far end of the Search Bar.
 
 ![Options to clear one search filter or clear all filters](images/all_filters.JPG)
 
-Here are some more features that Verse provides to make it easy for you to find what you need.
+Here are some more features that {{ shortVerseProductName }} provides to make it easy for you to find what you need.
 
 -   Find messages to and from a particular person by clicking their picture or by typing their name. If you want to, filter the results to show only messages to them or from them.
 -   Refine search results by time or folder location.
@@ -29,66 +31,13 @@ You can filter by person by clicking on a person's picture in the important pers
 
 Some examples:
 
-<table markdown id="table_g13_51j_pt"><thead><tr><th>
+| Filter tags | Results | Exact syntax |
+| :--- | :--- | :--- |
+| ![Search Larry From](images/search_larry.jpg) | This returns messages that were sent by Larry Moriarty. | This is the same as:<br>`from:"Larry Moriarty"` |
+| ![Search Larry To](images/search_larry_to.jpg) | This returns messages that were sent to Larry Moriarty. | This is the same as:<br>`to:"Larry Moriarty"` |
+| ![Search Larry Either](images/search_larry_either.jpg) | This returns messages that were sent by and to Larry Moriarty. | This is the same as:<br>`all:"Larry Moriarty"`
 
-Filter tags
-
-</th><th>
-
-Results
-
-</th><th>
-
-Exact syntax
-
-</th></tr></thead><tbody><tr><td>
-
-![](images/search_larry.jpg)
-
-</td><td>
-
-This returns messages that were sent by Larry Moriarty.
-
-</td><td>
-
-This is the same as:
-
-```
-from:"Larry Moriarty"
-```
-
-</td></tr><tr><td>
-
-![](images/search_larry_to.jpg)
-
-</td><td>
-
-This returns messages that were sent to Larry Moriarty.
-
-</td><td>
-
-This is the same as:
-```
-to:"Larry Moriarty"
-```
-
-</td></tr><tr><td>
-
-![](images/search_larry_either.jpg)
-
-</td><td>
-
-This returns messages that were sent by and to Larry Moriarty.
-
-</td><td>
-
-This is the same as:
-```
-all:"Larry Moriarty"
-```
-
-</td></tr></tbody>
-</table>## Refining search results
+## Refining search results
 
 You can also refine your search results using the **Refine search results** panel.
 
@@ -107,50 +56,12 @@ From here you can see options for filtering your messages. When you select an op
 
 Some examples:
 
-<table markdown id="table_snt_gz3_pt"><thead><tr><th>
+| Filter tags | Results | Exact syntax |
+| :--- | :--- | :--- |
+| ![Today](images/search_today.jpg) | This returns messages that were received Today. | `date:Today` |
+| ![Status Reports](images/search_statusreports.jpg) | This returns messages that are in the Status Reports folder. | `folder:"Status Reports"` |
 
-Filter tags
-
-</th><th>
-
-Results
-
-</th><th>
-
-Exact syntax
-
-</th></tr></thead><tbody><tr><td>
-
-![](images/search_today.jpg)
-
-</td><td>
-
-This returns messages that were received Today.
-
-</td><td>
-
-This is the same as
-```
-date:Today
-```
-
-</td></tr><tr><td>
-
-![](images/search_statusreports.jpg)
-
-</td><td>
-
-This returns messages that are in the Status Reports folder.
-
-</td><td>
-
-This is the same as:
-```
-folder:"Status Reports"
-```
-
-</td></tr></tbody>
-</table>## Searching by keyword
+## Searching by keyword
 
 The most basic search available is a keyword search. Keywords are any words you type in the search field that do not appear as filter tags. Search looks for exact matches of keywords in the body of all messages.
 
@@ -183,110 +94,20 @@ If you don't select a filter from the menu it won't be added as a filter tag and
 
 You can select more than one filter from the refined list to narrow your results even further. Some examples:
 
-<table markdown id="table_ggm_3bj_pt"><thead><tr><th>
+| Filter tags | Results | Exact syntax |
+| :--- | :--- | :--- |
+| ![Larry Moriarty](images/search_larry.jpg) ![Inbox](images/search_inbox.jpg) | This returns messages from Larry Moriarty **AND** are in my Inbox. | `from:"Larry Moriarty" AND folder:Inbox` |
+| ![Larry Moriarty](images/search_larry.jpg) ![Inbox](images/search_inbox.jpg) ![Today](images/search_today.jpg) | This returns messages from Larry Moriarty **AND** are in my Inbox **AND** were received Today. | `from:"Larry Moriarty" AND folder:Inbox AND date:Today` |
 
-Filter tags
+You can also combine filters, then separate them with 'OR' to return messages that include any one of the filters. Some more examples:
 
-</th><th>
+| Filter tags | Results | Exact syntax |
+| :--- | :--- | :--- |
+| ![Today](images/search_today.jpg) **OR** ![Yesterday](images/search_yesterday.jpg) | This returns messages received Today **OR** Yesterday. | `date:"Today" OR date:"Yesterday"` |
+| ![Larry Moriarty](images/search_larry.jpg) **OR** ![Dan Misawa](images/search_dan.jpg) | This returns messages sent by Larry Moriarty **OR** Dan Misawa. | `from:"Larry Moriarty" OR from:"Dan Misawa"` |
+| ![Inbox](images/search_inbox.jpg) **OR** ![Status Reports](images/search_statusreports.jpg) | This returns messages from Inbox **OR** the Status Reports folder. | `folder:Inbox OR folder:"Status Reports"` |
 
-Results
-
-</th><th>
-
-Exact syntax
-
-</th></tr></thead><tbody><tr><td>
-
-![](images/search_larry.jpg) ![](images/search_inbox.jpg)
-
-</td><td>
-
-This returns messages from Larry Moriarty AND are in my Inbox.
-
-</td><td>
-
-This is the same as: 
-```
-from:"Larry Moriarty" AND folder:Inbox
-```
-
-</td></tr><tr><td>
-
-![](images/search_larry.jpg) ![](images/search_inbox.jpg) ![](images/search_today.jpg)
-
-</td><td>
-
-This returns messages from Larry Moriarty AND are in my Inbox AND were received Today.
-
-</td><td>
-
-This is the same as:
-```
-from:"Larry Moriarty" AND folder:Inbox AND date:Today
-```
-
-</td></tr></tbody>
-</table>You can also combine filters, then separate them with 'OR' to return messages that include any one of the filters. Some more examples:
-
-<table markdown id="table_hss_fcj_pt"><thead><tr><th>
-
-Filter tags
-
-</th><th>
-
-Results
-
-</th><th>
-
-Exact syntax
-
-</th></tr></thead><tbody><tr><td>
-
-![](images/search_today.jpg) OR ![](images/search_yesterday.jpg)
-
-</td><td>
-
-This returns messages received Today OR Yesterday.
-
-</td><td>
-
-This is the same as:
-```
-date:"Today" OR date:"Yesterday"
-```
-
-</td></tr><tr><td>
-
-![](images/search_larry.jpg) OR ![](images/search_dan.jpg)
-
-</td><td>
-
-This returns messages sent by Larry Moriarty OR Dan Misawa.
-
-</td><td>
-
-This is the same as:
-```
-from:"Larry Moriarty" OR from:"Dan Misawa"
-```
-
-</td></tr><tr><td>
-
-![](images/search_inbox.jpg) OR ![](images/search_statusreports.jpg)
-
-</td><td>
-
-This returns messages from Inbox or the Status Reports folder.
-
-</td><td>
-
-This is the same as:
-```
-folder:Inbox OR folder:"Status Reports"
-```
-
-</td></tr></tbody>
-</table>## Working with Needs Action and Waiting For
+## Working with Needs Action and Waiting For
 
 When you are viewing Needs Action or Waiting For lists, you can also use person, folder, and time filter tags. For example:
 

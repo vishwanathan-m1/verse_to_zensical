@@ -2,7 +2,7 @@
 
 Do you have co-workers that are in a different time zone? Show the time from their time zone in your calendar to make it easier to schedule meetings with them.
 
-Select **Verse Settings** and in the Calendar section select **Display an additional time zone**. Select from the list of times zones, give the time zone a label, and save the change.
+Select **{{ shortVerseProductName }} Settings** and in the Calendar section select **Display an additional time zone**. Select from the list of times zones, give the time zone a label, and save the change.
 
 The additional time zone is shown in the Day or Week view of your calendar:
 
