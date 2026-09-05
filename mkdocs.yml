@@ -1,17 +1,17 @@
 #Project Information
 site_name: HCL Verse Help Center
-site_url: https://help.hcl-software.com/verse_onprem/3.2/index.html
+site_url: https://help.hcl-software.com/verse_onprem
 site_description: >
   HCL Verse documentation for users and admins.
 use_directory_urls: false
 docs_dir: source
-site_dir: docs
+# site_dir: docs
 
 # Theme Configuration
 theme:
   name: material
-  logo: assets/images/logo.svg 
-  favicon: assets/images/favicon.png
+  logo: logo/logo.png 
+  favicon: favicon/favicon.png
   language: en
   features:
     - navigation.tabs
@@ -25,10 +25,10 @@ theme:
     - content.code.select
     - content.code.copy
     - content.action.edit
-  custom_dir: theme_overrides
+  # custom_dir: theme_overrides
   icon:
     repo: fontawesome/brands/github
-    logo: fontawesome/regular/home
+    logo: logo/logo.png
 #    edit: fontawesome/regular/pen-to-square
   font:
     text: Roboto
