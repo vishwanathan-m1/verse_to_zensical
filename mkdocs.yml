@@ -5,15 +5,33 @@ site_description: >
   HCL Verse documentation for users and admins.
 use_directory_urls: false
 docs_dir: source
-site_dir: docs
+# site_dir: docs
 
 # Theme Configuration
 theme:
+  palette:
+    # scheme: default
+    # scheme: slate
+    # primary: red
+    # accent: red
+    - scheme: default
+      toggle:
+        icon: lucide/sun
+        name: Switch to dark mode
+
+# Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: lucide/moon
+        name: Switch to light mode
+        
+
   name: material
   logo: logo/logo.png 
   favicon: favicon/favicon.png
   language: en
   features:
+    - navigation.footer
     - navigation.tabs
     - navigation.indexes
     - navigation.top
@@ -27,12 +45,14 @@ theme:
     - content.action.edit
   # custom_dir: theme_overrides
   icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
     repo: fontawesome/brands/github
     logo: logo/logo.png
 #    edit: fontawesome/regular/pen-to-square
   font:
     text: Roboto
-    code: Roboto Mono
+    code: JetBrains Mono
   
   # Static files
 # static_templates:
@@ -74,6 +94,14 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://git.cwp.pnp-hcl.com/CWPdoc
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/zensical
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@zensical
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/zensical/
+    - icon: fontawesome/brands/slack
+      link: https://slack.com/app_redirect?channel=verse-docs&team=T01M4L4V7B7
   version:
     provider: mike
     # alias: true
@@ -125,7 +153,8 @@ plugins:
       lang: 
         - en
         - de
-  - tags
+  - tags:
+    tags_file: tags.md
   - section-index
   - macros
   - include-markdown
