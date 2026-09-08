@@ -3,3 +3,4 @@ theme_overrides/*
 docs/*
 .DS_Store
 .venv/
+.vscode
