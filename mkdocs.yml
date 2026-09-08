@@ -43,7 +43,7 @@ theme:
     - content.code.select
     - content.code.copy
     - content.action.edit
-  # custom_dir: theme_overrides
+  custom_dir: theme_overrides
   icon:
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
@@ -86,7 +86,7 @@ markdown_extensions:
 
 # Copyright
 copyright: >-
-  Copyright &copy; 2019-2026, HCL Technologies Limited - 
+  Copyright &copy; 2019-2026, HCLSoftware 
 #  <a href="#__consent">Change cookie settings</a>
 
 extra:
@@ -147,6 +147,7 @@ extra_javascript:
   - assets/javascripts/MiniChatJavaScript.js
   - javascripts/extra.js
   - javascripts/smartcat-search.js
+  - javascripts/SearchTranslation.js  
 
 plugins:
   - search:

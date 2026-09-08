@@ -1,0 +1,31 @@
+<!-- Custom HTML site displayed as the Home chapter -->
+
+{% extends "main.html" %}
+
+{% block tabs %}
+{{ super() }}
+<link rel="stylesheet" href="assets/stylesheets/homepage-styles.css">
+
+
+<!-- Hero Banner-->
+<section class="dx-hero-container">
+    <div class="md-grid md-typeset">
+        <div class="section-flexbox-row flex-start align-center">
+            <div class="dx-hero__content">
+                <div class="hero-heading">
+                    <!-- <h3>Welcome to the HCL Digital Experience Help Center</h3> -->
+                    <h1></h1>
+                    <h1 style="color: white;">HCL Verse Documentation</h1>
+                </div>
+                <div class="hero-body body-text white">
+                    <p>A modern email and business messaging platform designed to enhance productivity and collaboration.</p>
+                    <p>Access our product documentation and stay up-to-date with the product's latest updates.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
