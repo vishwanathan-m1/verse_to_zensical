@@ -51,5 +51,119 @@
     <meta name="robots" content="index, follow" />
   {% endif %}
   <meta property="og:image" content="https://opensource.hcltechsw.com/digital-experience/site-thumbnail.png" />
+
+  <style>
+    /* Navigation tab text color - Inactive tabs */
+    .md-tabs__link {
+      color: rgba(255, 255, 255, 0.75) !important; /* Pale white */
+      opacity: 0.85 !important;
+    }
+
+    /* Navigation tab text color - Active and Hovered tabs */
+    .md-tabs__link--active,
+    .md-tabs__link:hover {
+      color: #ffffff !important; /* Pure white on active or hover */
+      opacity: 1 !important;
+    }
+
+/* Site name text color in header */
+.md-header__title,
+.md-header__topic,
+.md-header__topic .md-ellipsis {
+  color: rgba(255, 255, 255, 0.85) !important; /* Pale white */
+}
+
+/* Hover state (optional) */
+.md-header__title:hover,
+.md-header__topic:hover {
+  color: #ffffff !important; /* Pure white on hover */
+}
+
+
+/* Palette toggle icon color (Light/Dark mode switch) */
+.md-header__option label,
+.md-header__option .md-icon,
+label[for^="__palette"],
+label[for^="__palette"] svg {
+  color: rgba(255, 255, 255, 0.85) !important; /* Pale white */
+  fill: rgba(255, 255, 255, 0.85) !important;  /* SVG icon fill */
+}
+
+/* Palette toggle hover state */
+label[for^="__palette"]:hover,
+label[for^="__palette"]:hover svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+
+
+/* 1. Force Search Component Theme Variables to White */
+.md-header .md-search,
+.md-search__form,
+[data-md-component="search"] {
+  --md-default-fg-color: black!important;
+  --md-default-fg-color--muted: #ffffff !important;
+  --md-default-fg-color--lightest: #ffffff !important;
+  --md-text-color: #ffffff !important;
+}
+
+/* 2. Container Background (Dark Charcoal/Black) */
+.md-header .md-search__form,
+.md-header .md-search__input {
+  background-color: white !important;
+  border-radius: 8px !important;
+}
+
+/* 3. Watermark Text ("Search") & Typed Text in Bright White */
+.md-header .md-search__input,
+.md-header .md-search__input::placeholder,
+.md-header .md-search__input::-webkit-input-placeholder,
+.md-header .md-search__input::-moz-placeholder,
+.md-header .md-search__input:-ms-input-placeholder {
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+  opacity: 100 !important;
+}
+
+/* 4. Magnifying Glass Icon (SVG & Mask Overrides) */
+.md-header .md-search__icon,
+.md-header label[for="__search"] {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+.md-header .md-search__icon svg,
+.md-header .md-search__icon svg path,
+.md-header label[for="__search"] svg,
+.md-header label[for="__search"] svg path {
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* CSS Mask icon override for theme mask elements */
+.md-header .md-search__icon::before,
+.md-header .md-search__icon::after,
+.md-header label[for="__search"]::before,
+.md-header label[for="__search"]::after {
+  background-color: #ffffff !important;
+  opacity: 100 !important;
+}
+
+/* 5. Shortcut Badge (⌘K) matching expected image */
+.md-header .md-search__form kbd {
+  background-color: #b5b5b8 !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  border: none !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+}
+
+
+
+      </style>
 {% endblock %}
 
