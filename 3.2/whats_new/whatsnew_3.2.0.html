@@ -1,4 +1,5 @@
 <!-- Elements added to main will be displayed on all pages -->
+<!--March2023-->
 
 
 <!doctype html>
@@ -110,139 +111,56 @@
     
     
   
-
-  
     <meta name="robots" content="index, follow" />
   
   <meta property="og:image" content="https://opensource.hcltechsw.com/digital-experience/site-thumbnail.png" />
 
   <style>
-    /* 1. Header Navigation Container Flexbox Layout */
-    .header-right-nav {
-      position: fixed !important;
-      top: 10px !important;
-      right: 20px !important;
-      display: inline-flex !important;
-      align-items: center !important;
-      gap: 18px !important; /* Space between Language selector and Resources */
-      z-index: 99999 !important;
-    }
-
-    .sc-lang-wrapper {
-      position: relative !important;
-      display: inline-flex !important;
-      align-items: center !important;
-    }
-
-    #scLangSelectorContainer,
-    #scLangSelectorContainer[style] {
-      position: relative !important;
-      left: auto !important;
-      right: auto !important;
-      top: auto !important;
-      display: inline-block !important;
-    }
-
-    /* Language Button Style (Matching Image 2) */
-    #scLangSelectorContainer > button,
-    #scLangSelectorContainer > select,
-    #scLangSelectorContainer .sc-btn {
-      background-color: #1c1c1e !important;
-      border: 1px solid rgba(255, 255, 255, 0.4) !important;
-      border-radius: 8px !important;
-      padding: 6px 12px !important;
-      color: #ffffff !important;
-      font-weight: 600 !important;
-      font-size: 14px !important;
-      cursor: pointer !important;
-      display: inline-flex !important;
-      align-items: center !important;
-      gap: 6px !important;
-    }
-
-    /* Resources Dropdown Style (Matching Image 2) */
-    .dropdown {
-      position: relative !important;
-      display: inline-block !important;
-    }
-
-    .dropbtn {
-      background: transparent !important;
-      color: #ffffff !important;
-      font-size: 16px !important;
-      font-weight: 500 !important;
-      border: none !important;
-      cursor: pointer !important;
-      padding: 6px 4px !important;
-      display: inline-flex !important;
-      align-items: center !important;
-      gap: 6px !important;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      right: 0;
-      top: 100%;
-      background-color: #1c1c1e;
-      min-width: 180px;
-      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-      border-radius: 8px;
-      border: 1px solid #333333;
-      z-index: 999999;
-    }
-
-    .dropdown-content a {
-      color: #ffffff;
-      padding: 10px 16px;
-      text-decoration: none;
-      display: block;
-      font-size: 14px;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #333338;
-      border-radius: 6px;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    /* 2. Navigation Tab Text Color */
+    /* Navigation tab text color - Inactive tabs */
     .md-tabs__link {
-      color: rgba(255, 255, 255, 0.75) !important;
+      color: rgba(255, 255, 255, 0.75) !important; /* Pale white */
       opacity: 0.85 !important;
     }
 
+    /* Navigation tab text color - Active and Hovered tabs */
     .md-tabs__link--active,
     .md-tabs__link:hover {
-      color: #ffffff !important;
+      color: #ffffff !important; /* Pure white on active or hover */
       opacity: 1 !important;
     }
 
-    /* 3. Site Name Text Color */
-    .md-header__title,
-    .md-header__topic,
-    .md-header__topic .md-ellipsis {
-      color: rgba(255, 255, 255, 0.85) !important;
-    }
+/* Site name text color in header */
+.md-header__title,
+.md-header__topic,
+.md-header__topic .md-ellipsis {
+  color: rgba(255, 255, 255, 0.85) !important; /* Pale white */
+}
 
-    .md-header__title:hover,
-    .md-header__topic:hover {
-      color: #ffffff !important;
-    }
+/* Hover state (optional) */
+.md-header__title:hover,
+.md-header__topic:hover {
+  color: #ffffff !important; /* Pure white on hover */
+}
 
-    /* 4. Palette Toggle Icon Color */
-    .md-header__option label,
-    .md-header__option .md-icon,
-    label[for^="__palette"],
-    label[for^="__palette"] svg {
-      color: rgba(255, 255, 255, 0.85) !important;
-      fill: rgba(255, 255, 255, 0.85) !important;
-    }
 
-    /* 5. Search Bar Dark Theme Styling */
+/* Palette toggle icon color (Light/Dark mode switch) */
+.md-header__option label,
+.md-header__option .md-icon,
+label[for^="__palette"],
+label[for^="__palette"] svg {
+  color: rgba(255, 255, 255, 0.85) !important; /* Pale white */
+  fill: rgba(255, 255, 255, 0.85) !important;  /* SVG icon fill */
+}
+
+/* Palette toggle hover state */
+label[for^="__palette"]:hover,
+label[for^="__palette"]:hover svg {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+
+
 /* 1. Force Search Component Theme Variables to White */
 .md-header .md-search,
 .md-search__form,
@@ -306,9 +224,10 @@
   font-weight: 500 !important;
   opacity: 1 !important;
 }
-  </style>
 
-  
+
+
+      </style>
 
   </head>
   
@@ -340,30 +259,37 @@
           <div class="md-banner__inner md-grid md-typeset">
             
             
-<div class="announce-container">
-  <a href="https://www.hcltechsw.com/" target="_blank"> 
-    <img width="150" height="30" src="https://help.hcltechsw.com/assets/images/HCL_Software_Logo_White.svg" alt="HCL Logo">
-  </a>
+<div>
+   <a href="https://www.hcltechsw.com/"> 
+  <img width="150" height="30" src="https://help.hcltechsw.com/assets/images/HCL_Software_Logo_White.svg" alt="HCL Logo" target="_blank"></a>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Combined Header Right Items Container -->
-  <div class="header-right-nav">
-    <!-- 1. Language Selector (Positioned on the Left) -->
-    <div class="sc-lang-wrapper">
-      <span id="scLangSelectorContainer"></span>
-    </div>
+<div class="dropdown">
+  <button class="dropbtn">Resources <i class="fa fa-caret-down"></i></button> 
+  <div class="dropdown-content">
+  <a href="https://support.hcltechsw.com" target="_blank">Customer Support</a>
+  <a href="https://hclsoftwareu.hcltechsw.com/hcl-dx" target="_blank">HCLSoftware U</a>
+  <a href="https://support.hcltechsw.com/community" target="_blank">Community Forums</a>
 
-    <!-- 2. Resources Dropdown (Positioned on the Right) -->
-    <div class="dropdown">
-      <button class="dropbtn">Resources <i class="fa fa-caret-down"></i></button> 
-      <div class="dropdown-content">
-        <a href="https://support.hcltechsw.com" target="_blank">Customer Support</a>
-        <a href="https://hclsoftwareu.hcltechsw.com/hcl-dx" target="_blank">HCLSoftware U</a>
-        <a href="https://support.hcltechsw.com/community" target="_blank">Community Forums</a>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+  
+<div style='float: right;display: inline-block;width: 140px;margin-top: -7px;'>
+<span id='scLangSelectorContainer' style='z-index: 1000; position: absolute; right:200.95px;'/>
+</div>
+
+  <!-- Uncomment the following announcement if you need it -->
+  <!--
+ <div class="md-banner--feedback" style="display:inline">
+
+  <strong>We value your feedback on this site.</strong> Please report any issues you find <a class="announcement__link" href="https://github.com/HCL-TECH-SOFTWARE/digital-experience/issues">via Github</a>. 
+  
+  <div class="md-banner--feedback">Looking for v8.5 or v9.0? <a class="announcement__link"  href="https://help.hcltechsw.com/digital-experience/9.5/welcome_hcl_dx.html">Check the legacy Help Center.</a>
+</div>  
+</div>
+-->
+
 </div>
 
           </div>
