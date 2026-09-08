@@ -1,3 +1,10 @@
+---
+tags:
+  - Mail
+  - Calendar
+  - Admin
+---
+
 # How do I use the Calendar Bar?
 
 HCL Verse goes beyond the straight forward calendar functionality you're used to by giving you a visual and intuitive calendar experience integrated right in your message Inbox. It's almost like having a personal assistant.
