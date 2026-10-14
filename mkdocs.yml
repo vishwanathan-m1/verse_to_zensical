@@ -85,12 +85,16 @@ markdown_extensions:
 #     alternate_style: true 
 
 # Copyright
-copyright: >-
-  Copyright &copy; 2019-2026, HCLSoftware 
-#  <a href="#__consent">Change cookie settings</a>
+copyright: >
+  Copyright &copy; 2020-2026, HCLSoftware &nbsp;|&nbsp;
+  <a href="https://www.hcltechsw.com/legal/disclaimer" target="_blank" rel="noopener">Disclaimer</a>  &nbsp;|&nbsp;
+  <a href="https://www.hcltechsw.com/legal/privacy" target="_blank" rel="noopener">Privacy</a>  &nbsp;|&nbsp;
+  <a href="https://www.hcltechsw.com/legal/terms-use" target="_blank" rel="noopener">Terms of use</a>
+
 
 extra:
   homepage: https://help.hcl-software.com/verse_onprem/
+  # generator: false     # made with zensical will not be displayed in the footer. Also footer.html in theme_overrides/partials/footer.html will be used in priority to the default footer.html in the theme directory.
   social:
     - icon: fontawesome/brands/github
       link: https://git.cwp.pnp-hcl.com/CWPdoc
