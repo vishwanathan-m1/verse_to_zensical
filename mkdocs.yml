@@ -155,7 +155,7 @@ plugins:
         - en
         - de
   - tags:
-    tags_file: tags.md
+     tags_file: tags.md
   - section-index
   - macros
   - include-markdown
