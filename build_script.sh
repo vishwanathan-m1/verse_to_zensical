@@ -13,7 +13,8 @@ echo "Building Documentation V3.2 ..."
 	# git push -f origin v9.5
 	# git checkout tags/v9.5
 	
-mike deploy --push --update-aliases 3.2 latest -t 3.2
+# mike deploy --push --update-aliases 3.2 latest -t 3.2
+mike deploy --push 3.2 -t 3.2
 # mike set-default --push latest 
 
 git checkout rel/3.2
