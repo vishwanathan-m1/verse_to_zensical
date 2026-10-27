@@ -2,7 +2,7 @@
 {% if isDominoWorkspace %}
 Learn about the new features and enhancements in Domino Workspace.
 {% else %}
-Learn about the new features and enhancements in HCL Verse 3.2.{% endif %}  
+Learn about the new features and enhancements in HCL Verse 3.3.{% endif %}  
 {{ fullVerseProductName }} introduces new features and enhancements in several areas.  
 
 -   **[What's new in Verse 3.2.7?](../whats_new/whats_new_3.2.7.md)**  
