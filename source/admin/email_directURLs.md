@@ -22,3 +22,9 @@ Where <`document_id`> is UNID of the mail you want to open.
 
 Example:
 > https://server.com/verse?mode=mailread#/tearoff/CBA72A23851BA7DE85258E0D005C2A94
+ 
+
+``` { .yaml .select }
+# Code block content-1
+# Code block content-2
+```
