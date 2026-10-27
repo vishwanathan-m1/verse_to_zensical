@@ -24,7 +24,7 @@ Example:
 > https://server.com/verse?mode=mailread#/tearoff/CBA72A23851BA7DE85258E0D005C2A94
  
 
-``` { .yaml .select }
+``` { .yaml .no-select }
 # Code block content-1
 # Code block content-2
 ```
