@@ -1,8 +1,8 @@
 #Project Information
 site_name: HCL Verse Help Center
 site_url: https://help.hcl-software.com/verse_onprem
-site_description: >
-  HCL Verse documentation for users and admins.
+# site_description: >
+#   HCL Verse documentation for users and admins.
 use_directory_urls: false
 docs_dir: source
 # if hosted from "main" branch, docs dir, for non-version builds, run "zensical build" and enable the following:
@@ -160,6 +160,7 @@ plugins:
   - section-index
   - macros
   - include-markdown
+  - meta-descriptions
   - mike:
       canonical_version: latest
       alias_type: redirect
