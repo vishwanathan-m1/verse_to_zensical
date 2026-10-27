@@ -115,6 +115,7 @@ extra:
 # Product name variables and values
   fullVerseProductName: HCL Verse
   shortVerseProductName: Verse
+  shortVerseVersionProductName: Verse 3.2.7
   currentVersion: 3.2.7
   oldDocsVersionStr: 3.1
   oldDocsUrl: https://help.hcl-software.com/verse_onprem/welcome/index.html
